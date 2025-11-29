@@ -20,58 +20,52 @@ class PortfolioApp {
       10
     );
 
-    // Project data
+    // Project data (actual projects from CV)
     this.projectData = {
       project1: {
-        title: "E-commerce Platform",
+        title: "AtlasKRD — High-Traffic Content Delivery Platform",
         description:
-          "A comprehensive e-commerce solution built with modern web technologies. Features include user authentication, product catalog, shopping cart, payment processing, and admin dashboard.",
-        technologies: ["React", "Node.js", "MongoDB", "Stripe API", "AWS S3"],
+          "Engineered a secure, scalable platform handling over 750,000 daily requests for web and mobile clients. Architected and migrated the backend to a cloud-based solution, achieving a 99.5% cost reduction while improving reliability.",
+        technologies: ["Cloudflare Workers/R2", "Vercel", "Supabase", "CI/CD"],
         features: [
-          "Responsive design for all devices",
-          "Secure payment integration with Stripe",
-          "Real-time inventory management",
-          "Advanced search and filtering",
-          "Order tracking and history",
+          "High-throughput request handling",
+          "Cost-optimized backend architecture",
+          "Automated CI/CD deployments",
+          "Custom secure access system",
         ],
         challenges:
-          "Implementing real-time inventory updates and handling high traffic loads during peak shopping periods.",
+          "Balancing performance with cost constraints and ensuring reliable delivery under heavy load.",
         outcome:
-          "Increased client sales by 40% and improved user satisfaction scores by 35%.",
+          "Reduced hosting costs from $1,500/mo to ~$7/mo while improving reliability and scalability.",
       },
       project2: {
-        title: "Task Management App",
+        title: "NutrAI — AI-Based Data Analysis Platform",
         description:
-          "A collaborative task management application designed for remote teams. Built with Vue.js and Firebase, featuring real-time updates and team collaboration tools.",
-        technologies: ["Vue.js", "Firebase", "WebSocket", "Vuex", "CSS Grid"],
+          "Full-stack application integrating Google Gemini for intelligent data processing and image recognition. Built a responsive interface for presenting complex data and personalized recommendations; recognized as a top-ranked project at DPU Software Expo 2025.",
+        technologies: ["Google Gemini", "React", "Supabase", "Next.js"],
         features: [
-          "Real-time collaborative editing",
-          "Drag-and-drop task management",
-          "Team chat and notifications",
-          "Time tracking and reporting",
-          "Mobile-responsive design",
+          "Image-based ingredient detection",
+          "Personalized meal recommendations",
+          "Interactive analytics dashboard",
         ],
         challenges:
-          "Implementing real-time synchronization across multiple users and handling offline functionality.",
-        outcome:
-          "Adopted by 15+ companies and improved team productivity by 25%.",
+          "Integrating third-party AI APIs and presenting complex results in an accessible UI.",
+        outcome: "Top-ranked project at DPU Software Expo 2025.",
       },
       project3: {
-        title: "Analytics Dashboard",
+        title: "3D Wind Turbine Prototype",
         description:
-          "An interactive data visualization dashboard for business intelligence. Features advanced charts, filtering capabilities, and data export functionality.",
-        technologies: ["D3.js", "Python", "PostgreSQL", "Flask", "Chart.js"],
+          "Designed a detailed 3D engineering model in SketchUp as part of an international team. The prototype was developed for the IREX Global Solutions Challenge and secured 3rd place.",
+        technologies: ["SketchUp", "Collaborative remote development"],
         features: [
-          "Interactive data visualizations",
-          "Real-time data updates",
-          "Advanced filtering and search",
-          "Export to PDF and Excel",
-          "Custom report generation",
+          "3D engineering modeling",
+          "Sustainability-focused design",
+          "International collaboration",
         ],
         challenges:
-          "Processing large datasets efficiently and creating intuitive data visualizations.",
+          "Coordinating a distributed team and iterating on physical design constraints.",
         outcome:
-          "Reduced report generation time by 60% and improved decision-making processes.",
+          "3rd place in IREX Global Solutions Challenge and a $1,000 team grant.",
       },
     };
   }

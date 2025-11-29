@@ -1,8 +1,12 @@
-# Salah Hasan Ali Alsilevanai — Personal Website
+# SALAH HASAN ALI ALSILEVANAI — Full-Stack Developer
 
-Welcome to my personal website!
+Contact: (+964) 7518459670 | salah.alsilevanai@gmail.com | https://salah.alsilevanai.com
 
-This site showcases my portfolio, skills, projects, experience, and contact information as a Full Stack Developer & IT Management Professional.
+GitHub: https://github.com/salahalsilevanai | LinkedIn: https://www.linkedin.com/in/salahalsilevanai/
+
+Duhok, Iraq
+
+Full-Stack Developer with a strong foundation in building and optimizing high-performance web applications. Specializes in React, Next.js, and modern cloud infrastructure. Demonstrated success in end-to-end project leadership, including large-scale backend migrations, AI-integrated platforms, and CI/CD automation.
 
 ## 🚀 Features
 
@@ -40,8 +44,8 @@ project/
 ## 📦 Getting Started
 
 1. **Clone or Download:**
-   ```
-   git clone https://github.com/salah-alsilevanai/salah.alsilevanai.com.git
+   ```bash
+   git clone https://github.com/salahalsilevanai/salah.alsilevanai.com.git
    ```
 2. **Open `index.html` in your browser.**
 3. **No build step required.**  
@@ -60,4 +64,4 @@ This project is open source and free to use for personal portfolio purposes.
 ---
 
 **Created by [Salah Hasan Ali Alsilevanai](https://salah.alsilevanai.com/)**  
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/salah-alsilevanai/) or [GitHub](https://github.com/salah-alsilevanai).
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/salahalsilevanai/) or [GitHub](https://github.com/salahalsilevanai).
