@@ -16,61 +16,62 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 
-    <script>
-        // bring it from a file named data.json
-        fetch('./data.json')
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-            })
-            .catch(err => {
-                console.error(err);
-            })
-    </script>
+
     <title>Salah Alsilevanai</title>
 </head>
 
 <body class="px-20 pt-8">
-    <div id="main">
-        <div class="flex justify-center">
 
-            <!-- align this whole thing in an appropriate place -->
-            <div
-                class="rounded-full w-32 h-32 overflow-hidden transition-all duration-300 ease-in-out shadow-2xl hover:shadow-xl">
-                <img class=" w-full h-full object-cover object-[center_30%] transition-all duration-300 ease-in-out hover:scale-[103%]"
-                    src="./static/pictures/selfie.jpeg" alt="">
-            </div>
-            <h1 class="text-6xl">Salah Alsilevanai</h1>
-        </div>
-        <h2 class="text-xl">Full Stack Developer & IT Engineer based in Duhok</h2>
+    <div id="root"></div>
 
-        <div id="my-work">
-            <p>Projects:</p>
-
-            <!-- create a card for each project -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Project Title</h3>
-                    <p class="card-description">Project Description</p>
-                    <div class="card-actions">
-                        <a href="" class="card-link">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div id="about-me"></div>
-        <div id="contact"></div>
-
-
-
-    </div>
 
     <script type="text/babel">
+        const { useState, useEffect } = React;
 
+        function Header({ data }) {
+            return (
+                <div className="
+                flex items-center justify-between
+                ">
+                    <h1>{data?.name}</h1>
+
+                </div>
+            )
+        }
+
+        function Hero({ data }) {
+            return (
+                <div className="flex 
+                ">
+
+                </div>
+            )
+        }
+        function App() {
+            const [data, setData] = useState(null);
+            useEffect(() => {
+                fetch('./data.json')
+                    .then(response => response.json())
+                    .then(loadedData => {
+                        setData(loadedData);
+                    })
+                    .catch(err => {
+                        console.error(err);
+                    })
+            }, []);
+
+            if (!data) return <p>Loading...</p>;
+
+
+            return (
+                <div>
+                    <Header data={data} />
+                </div>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        root.render(<App />);
     </script>
 </body>
 
