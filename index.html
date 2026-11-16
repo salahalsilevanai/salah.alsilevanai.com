@@ -34,7 +34,62 @@
                 flex items-center justify-between
                 ">
                     <h1>{data?.name}</h1>
+                    <p>{data?.title}</p>
+                    <ul>
+                        {data?.social?.map((social, index) => (
+                            <li key={index}>
+                                <a href={social.url}>{social.name}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )
+        }
+        function ProjectPage({ project, index }) {
+            return (
+                <div key={index} className="my-8">
+                    <h2 className="text-2xl font-bold">{project.name}</h2>
 
+                    {project.live_demo && <a className="text-blue-500 hover:underline" href={project.live_demo}>Live Project <span className="inline-block ml-1">&#8599;</span></a>}
+                    {project.github_page && <a className="text-blue-500 hover:underline" href={project.github_page}>GitHub Page <span className="inline-block ml-1">&#8599;</span></a>}
+
+                    <p className="text-gray-600 font-medium">{project.subtitle}</p>
+                    <p className="mt-2">{project.short_description || project.overview}</p>
+                    <ul className="mt-4 list-disc pl-5">
+                        {project?.features?.map((featureObj, fIndex) => {
+                            const [title, desc] = Object.entries(featureObj)[0] || [];
+                            return (
+                                <li key={fIndex} className="mb-1">
+                                    <strong>{title}:</strong> {desc}
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            )
+        }
+
+        function ProjectCards({ data }) {
+            return (
+                <div>
+                    {data?.map((project, index) => <ProjectCard key={index} project={project} />)}
+                </div>
+            )
+        }
+        function ProjectCard({ project, index }) {
+            return (
+                <div key={index} className="my-4 p-8 border border-amber-900 rounded-lg  flex flex-col gap-4">
+                    <h2 className="text-2xl font-bold">{project.name}</h2>
+
+                    {project.live_demo && <a className="text-blue-500 hover:underline" href={project.live_demo}>Live Project <span className="inline-block ml-1">&#8599;</span></a>}
+                    {project.github_page && <a className="text-blue-500 hover:underline" href={project.github_page}>GitHub Page <span className="inline-block ml-1">&#8599;</span></a>}
+
+                    <p className="text-gray-600 font-medium">{project.subtitle}</p>
+                    <div>
+                        {project.tech_stack?.map((tech, index) => (
+                            <span key={index} className="inline-block bg-gray-200 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tech}</span>
+                        ))}
+                    </div>
                 </div>
             )
         }
@@ -51,7 +106,10 @@
             const [data, setData] = useState(null);
             useEffect(() => {
                 fetch('./data.json')
-                    .then(response => response.json())
+                    .then(response => {
+                        if (!response.ok) throw new Error('Failed to load data.json');
+                        return response.json();
+                    })
                     .then(loadedData => {
                         setData(loadedData);
                     })
@@ -65,7 +123,9 @@
 
             return (
                 <div>
+
                     <Header data={data} />
+                    <ProjectCards data={data.projects} />
                 </div>
             )
         }

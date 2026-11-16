@@ -2,16 +2,113 @@
     "name": "Salah Alsilevanai",
     "title": "Full Stack Developer & IT Engineer",
     "location": "Duhok, Kurdistan",
-    "projects": [
+    "social": [
         {
-            "name": "Project 1",
-            "description": "Description 1",
-            "link": ""
+            "name": "GitHub",
+            "url": "https://github.com/salahalsilevanai"
         },
         {
-            "name": "Project 2",
-            "description": "Description 2",
-            "link": ""
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/salahalsilevanai/"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Atlas KRD Backend",
+            "subtitle": "Edge Content Delivery, Subscription Engine & Cloud Architecture",
+            "short_description": "Serverless edge media delivery and automated subscription infrastructure built with Cloudflare Workers and R2—cutting hosting costs to ~$10/month while smoothly handling a 700,000-request launch surge across Android, iOS, and web.",
+            "overview": "Architected and built the entire backend, media delivery, and subscription infrastructure from the ground up for a cross-platform content service spanning Android, iOS, and the web. Consulted the project owner away from costly AWS storage in favor of a serverless edge architecture—bringing monthly infrastructure expenses down to ~$10/month while smoothly handling a 700,000-request surge at launch.",
+            "features": [
+                {
+                    "Cross-Platform Edge Delivery": "Engineered custom Cloudflare Workers to stream video and media assets directly from Cloudflare R2 object storage to the Android app, iOS app, and website with low latency and zero egress fees."
+                },
+                {
+                    "Automated Subscription & Gating System": "Built a custom access-code redemption system tied to user emails with server-enforced expiration timers (e.g., a 1-month code redeemed on Oct 23 automatically revokes access on Nov 23). Implemented matching validation logic across the web and mobile clients to strictly block unsubscribed users from accessing protected videos and content."
+                },
+                {
+                    "Cost & Scale Optimization": "Researched and replaced an initial AWS S3 plan—which carried prohibitive bandwidth costs—with a Cloudflare R2 and Workers stack, keeping ongoing hosting costs around ~$10/month without sacrificing performance during a 700,000-request launch traffic spike."
+                },
+                {
+                    "Automated CI/CD Deployment": "Configured a continuous integration and deployment pipeline linking a private GitHub repository directly to Cloudflare, automatically deploying updates to production whenever changes are pushed to the master branch."
+                }
+            ],
+            "tech_stack": [
+                "Cloudflare Workers",
+                "Cloudflare R2",
+                "JavaScript",
+                "REST APIs",
+                "GitHub / Cloudflare CI/CD"
+            ],
+            "live_demo": "https://atlaskrd.com/",
+            "github_page": null,
+            "year": "2025"
+        },
+        {
+            "name": "ZMS Publishing",
+            "subtitle": "Bilingual Digital Publishing Platform, Custom Dashboard & Production Infrastructure",
+            "short_description": "Full-stack bilingual (English/Arabic RTL) web platform and custom editorial dashboard built for a Dubai-based publishing house, streamlining manuscript submissions, book catalogs, and event management on a self-hosted Linux VPS.",
+            "overview": "Designed, engineered, and deployed a full-stack bilingual web platform for a Dubai-based book publishing house. Built around a minimal editorial aesthetic, the platform streamlines manuscript intake from aspiring authors, showcases book catalogs and literary events, and gives the publisher a tailored content management dashboard—all running on a self-managed Linux VPS architecture.",
+            "features": [
+                {
+                    "Bilingual UI with Automatic RTL/LTR Switching": "Engineered seamless English and Arabic localization that dynamically adapts layout direction (RTL/LTR), styled with Tailwind CSS and classic editorial serif typography (EB Garamond)."
+                },
+                {
+                    "Manuscript Intake & Review Pipeline": "Built a secure upload portal for authors to submit manuscripts, synopses, and word counts, paired with a custom Django admin dashboard for editors to manage submissions and track review stages (Submitted, Reviewing, Accepted, Rejected)."
+                },
+                {
+                    "Catalog, Author & Event Management": "Designed relational database schemas for managing books, author profiles, and literary events (book launches, signings, and workshops), complete with regional Amazon UAE (.ae) and international (.com) distribution links."
+                },
+                {
+                    "Full VPS Deployment & Security Hardening": "Provisioned and deployed the production stack on a Hetzner VPS using Gunicorn managed via PM2 alongside PostgreSQL. Configured Nginx reverse-proxy routing and static/media serving, issued SSL certificates via Certbot, and routed traffic through Cloudflare DNS for added security and edge protection."
+                }
+            ],
+            "tech_stack": [
+                "Python",
+                "Django",
+                "PostgreSQL",
+                "Tailwind CSS",
+                "Nginx",
+                "PM2",
+                "Gunicorn",
+                "Hetzner VPS",
+                "Certbot",
+                "Cloudflare"
+            ],
+            "live_demo": "https://zmspublishing.com",
+            "github_page": null,
+            "year": "2026"
+        },
+        {
+            "name": "LoungeCast",
+            "subtitle": "Real-Time Synchronized Watch Party Extension & WebSocket Relay Server",
+            "short_description": "Zero-login Chrome extension (Manifest V3) and Node.js Socket.IO relay server for synchronized OSN+ and YouTube watch parties—featuring real-time play/pause/seek/episode sync, an in-page chat overlay, and automatic service worker recovery hosted on a Hetzner VPS via Cloudflare Tunnels.",
+            "overview": "Built a zero-login Chrome extension (Manifest V3) and Node.js WebSocket relay server that enables remote users to watch OSN+ and YouTube videos in real-time sync with an integrated in-page chat overlay. Hosted on a Hetzner VPS via Nginx and Cloudflare Tunnels, the extension works out of the box in any Chrome browser with instant room creation and automatic state recovery.",
+            "features": [
+                {
+                    "Real-Time Playback & Episode Sync": "Engineered a Socket.IO relay server (osntogetherextension.alsilevanai.com) that tracks per-room playback state (isPlaying, currentTime, url) as a single source of truth—synchronizing play, pause, seek, and automatic URL/episode transitions across peers with loop-prevention logic."
+                },
+                {
+                    "Manifest V3 Service Worker & State Recovery": "Implemented a persistent WebSocket connection in the MV3 background service worker to route events per tab (tabRooms), paired with a rebuildTabRooms() recovery routine that restores room state automatically if Chrome suspends an idle worker."
+                },
+                {
+                    "In-Page Chat Overlay & Playback Hotkeys": "Injected a slide-out live chat panel directly onto osnplus.com and youtube.com players alongside editable display names, live connection indicators, and keyboard shortcuts (p, s, r, j, l)."
+                },
+                {
+                    "Zero-Login Instant Access & VPS Infrastructure": "Deployed the Node.js relay server on a Hetzner VPS behind Nginx and Cloudflare Tunnels, allowing users to install the extension in Chrome and immediately create or join watch rooms with a shareable Room ID—no registration required."
+                }
+            ],
+            "tech_stack": [
+                "JavaScript (ES Modules)",
+                "Chrome Extension API (Manifest V3)",
+                "Node.js",
+                "Socket.IO (WebSockets)",
+                "Nginx",
+                "Cloudflare Tunnels",
+                "Hetzner VPS"
+            ],
+            "live_demo": "",
+            "github_page": "https://github.com/salahalsilevanai/lounge-cast",
+            "year": "2026"
         }
     ]
 }
