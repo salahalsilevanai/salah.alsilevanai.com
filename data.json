@@ -1,0 +1,17 @@
+{
+    "name": "Salah Alsilevanai",
+    "title": "Full Stack Developer & IT Engineer",
+    "location": "Duhok, Kurdistan",
+    "projects": [
+        {
+            "name": "Project 1",
+            "description": "Description 1",
+            "link": ""
+        },
+        {
+            "name": "Project 2",
+            "description": "Description 2",
+            "link": ""
+        }
+    ]
+}

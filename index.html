@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- add react links -->
+    <!-- 1. React Core -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- 2. ReactDOM (for rendering to the browser) -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- 3. Babel (to translate JSX into standard JavaScript) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <script>
+        // bring it from a file named data.json
+        fetch('./data.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(err => {
+                console.error(err);
+            })
+    </script>
     <title>Salah Alsilevanai</title>
 </head>
-<body>
-    <div id="nav">
-        
-    </div>
+
+<body class="px-20 pt-8">
     <div id="main">
-        <h1>Salah Alsilevanai</h1>
-        <h2></h2>
-    </div>
-    <div id="footer">
+        <div class="flex justify-center">
+
+            <!-- align this whole thing in an appropriate place -->
+            <div
+                class="rounded-full w-32 h-32 overflow-hidden transition-all duration-300 ease-in-out shadow-2xl hover:shadow-xl">
+                <img class=" w-full h-full object-cover object-[center_30%] transition-all duration-300 ease-in-out hover:scale-[103%]"
+                    src="./static/pictures/selfie.jpeg" alt="">
+            </div>
+            <h1 class="text-6xl">Salah Alsilevanai</h1>
+        </div>
+        <h2 class="text-xl">Full Stack Developer & IT Engineer based in Duhok</h2>
+
+        <div id="my-work">
+            <p>Projects:</p>
+
+            <!-- create a card for each project -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="" alt="">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Project Title</h3>
+                    <p class="card-description">Project Description</p>
+                    <div class="card-actions">
+                        <a href="" class="card-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="about-me"></div>
+        <div id="contact"></div>
+
+
 
     </div>
-    
+
+    <script type="text/babel">
+
+    </script>
 </body>
+
 </html>
