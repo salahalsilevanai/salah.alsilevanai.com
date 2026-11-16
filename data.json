@@ -12,6 +12,7 @@
             "url": "https://www.linkedin.com/in/salahalsilevanai/"
         }
     ],
+    "email": "salah@alsilevanai.com",
     "projects": [
         {
             "name": "Atlas KRD Backend",
@@ -109,6 +110,766 @@
             "live_demo": "",
             "github_page": "https://github.com/salahalsilevanai/lounge-cast",
             "year": "2026"
+        }
+    ],
+    "work_experience": [
+        {
+            "work_experience": [
+                {
+                    "company": "TRT Global Solutions (TRT Solutions Limited)",
+                    "company_url": "https://www.trt.com/",
+                    "title": "Field Services Partner (FSP)",
+                    "employment_type": "Contract / Freelance",
+                    "start_date": "2026-10-01",
+                    "end_date": "",
+                    "is_current": true,
+                    "location": "Duhok, Iraq",
+                    "work_mode": "On-site / Hybrid",
+                    "description": "Local Field Services Partner providing on-site and remote technical field support, hardware provisioning, and maintenance across Duhok and Erbil for enterprise clients including Nokia Solutions and Networks Oy.",
+                    "responsibilities": [
+                        "Conduct on-site surveys, verify rack space, cabling, and port requirements, and inspect/validate spare equipment.",
+                        "Perform hardware pre-checks, faulty component replacements, spare network switch upgrades, and post-replacement validation.",
+                        "Execute incident and change request dispatches under P1, P2, and P3 Service Level Agreements (SLAs) during both standard business hours and outside business hours.",
+                        "Coordinate remotely with global support desks (GSD/GSS) and Field Service Incident Managers on activity planning, briefings, and troubleshooting.",
+                        "Safely receive, store, and maintain accountability for client and TRT replacement hardware."
+                    ],
+                    "achievements": [
+                        "Successfully executed multiple multi-stage Nokia infrastructure maintenance and spare switch upgrade dispatches across Duhok and Erbil (Case cr20583750) with 100% job completion sign-offs.",
+                        "Negotiated and established a customized regional SLA and 3-week shift rotation framework aligned with the Iraqi workweek (Sunday–Thursday)."
+                    ],
+                    "skills": [
+                        "Field Service Engineering",
+                        "Network Switch Upgrades",
+                        "Hardware Troubleshooting & Replacement",
+                        "Site Surveys & Rack Cabling Verification",
+                        "SLA Management (P1/P2/P3)",
+                        "Enterprise IT Support",
+                        "Remote & On-site Coordination"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "HAREKAR",
+            "company_url": "",
+            "title": "CCTV Operator",
+            "employment_type": "Full-time (rotation)",
+            "start_date": "2026-02",
+            "end_date": "",
+            "is_current": true,
+            "location": "Qadiya Oil & Gas Field, Kurdistan Region, Iraq",
+            "work_mode": "On-site",
+            "description": "CCTV operator supporting DNO oil and gas field operations near Qadiya, working a 14-days-on / 7-days-off rotation in an active field environment.",
+            "responsibilities": [
+                "Operate and monitor CCTV surveillance across active oil and gas field sites",
+                "Track system status in real time, escalate incidents promptly, and maintain operational logs in line with field security procedures",
+                "Use VHF radio to receive and act on field commands",
+                "Coordinate with on-site teams on camera health, network connectivity, and equipment checks across multiple locations"
+            ],
+            "achievements": [],
+            "skills": [
+                "CCTV Monitoring",
+                "VHF Radio",
+                "Incident Escalation",
+                "Operational Logging",
+                "Field Operations",
+                "Oil & Gas"
+            ]
+        },
+        {
+            "company": "Self-Employed",
+            "company_url": "https://salah.alsilevanai.com",
+            "title": "Senior IT Engineer (Freelance)",
+            "employment_type": "Freelance",
+            "start_date": "2018-01",
+            "end_date": "",
+            "is_current": true,
+            "location": "Duhok, Iraq",
+            "work_mode": "Hybrid (on-site and remote)",
+            "description": "Freelance IT support, networking, and CCTV installation for businesses and residential clients.",
+            "responsibilities": [
+                "Diagnose and resolve hardware and software faults on Windows desktops, laptops, and mobile devices (Android/iOS)",
+                "Install, configure, and maintain CCTV systems, including camera setup, DVR/NVR configuration, and network integration",
+                "Deploy and troubleshoot LAN/Wi-Fi networks, routers, and structured cabling",
+                "Perform OS installations, upgrades, data backups, and performance optimisation",
+                "Deliver remote troubleshooting using remote desktop tools"
+            ],
+            "achievements": [],
+            "skills": [
+                "Windows",
+                "Networking",
+                "LAN/Wi-Fi",
+                "Structured Cabling",
+                "CCTV (DVR/NVR)",
+                "Mobile Device Support",
+                "Remote Support",
+                "Backups"
+            ]
+        },
+        {
+            "company": "Self-Employed",
+            "company_url": "https://salah.alsilevanai.com",
+            "title": "Full-Stack Developer (Freelance / Part-Time)",
+            "employment_type": "Freelance",
+            "start_date": "2025-01",
+            "end_date": "",
+            "is_current": true,
+            "location": "Duhok, Iraq",
+            "work_mode": "Remote",
+            "description": "Freelance full-stack development, from backend infrastructure and APIs to front-end interfaces, deployment, and hosting.",
+            "responsibilities": [
+                "Design, build, and deploy web applications end to end",
+                "Host websites on VPS servers and set up free SSL for secure HTTPS access",
+                "Build APIs with Django and configure the complete user flow from domain and server to API and front-end",
+                "Set up CI/CD pipelines and cloud hosting (Cloudflare, Vercel, Supabase)"
+            ],
+            "achievements": [
+                "Migrated AtlasKRD, a platform handling 750,000+ daily requests, to cloud infrastructure, cutting hosting costs by 99.5% ($1,500/mo to $7/mo) while improving reliability",
+                "NutrAI, an AI-based data analysis platform, ranked among top projects at DPU Software Expo 2025",
+                "Completed HarvardX CS50x (Jul 2026)"
+            ],
+            "skills": [
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Django",
+                "SQL",
+                "HTML/CSS",
+                "VPS Hosting",
+                "SSL/HTTPS",
+                "Cloudflare",
+                "Supabase",
+                "CI/CD"
+            ]
+        },
+        {
+            "company": "Warveen",
+            "company_url": "",
+            "title": "Creative Designer & Stationery Associate",
+            "employment_type": "Temporary",
+            "start_date": "2025-08",
+            "end_date": "2025-10",
+            "is_current": false,
+            "location": "Duhok, Iraq",
+            "work_mode": "On-site",
+            "description": "Handled client design projects and stationery services, from concept to delivery.",
+            "responsibilities": [
+                "Managed client design projects from brief to completion, including large-format printing and academic thesis formatting",
+                "Advised clients and turned their requirements into effective visual solutions",
+                "Handled payments and administrative record-keeping"
+            ],
+            "achievements": [],
+            "skills": [
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Layout & Typography",
+                "Client Communication"
+            ]
+        },
+        {
+            "company": "Sultan Alsham",
+            "company_url": "",
+            "title": "Restaurant Captain",
+            "employment_type": "Temporary",
+            "start_date": "2024-09",
+            "end_date": "2024-11",
+            "is_current": false,
+            "location": "Duhok, Iraq",
+            "work_mode": "On-site",
+            "description": "Led floor service in a high-pressure, procedure-driven restaurant environment.",
+            "responsibilities": [
+                "Prioritised tasks and resolved operational issues in real time",
+                "Coordinated staff and resources during peak hours",
+                "Handled customer enquiries and complaints"
+            ],
+            "achievements": [],
+            "skills": [
+                "Team Coordination",
+                "Customer Service",
+                "Problem Solving"
+            ]
+        },
+        {
+            "company": "MikeSport",
+            "company_url": "",
+            "title": "Sales Representative",
+            "employment_type": "Temporary",
+            "start_date": "2024-06",
+            "end_date": "2024-09",
+            "is_current": false,
+            "location": "Duhok, Iraq",
+            "work_mode": "On-site",
+            "description": "Retail sales, point-of-sale operation, and basic technical support.",
+            "responsibilities": [
+                "Advised customers on products and processed transactions",
+                "Supported POS systems and end-user hardware",
+                "Assisted with inventory systems and basic troubleshooting"
+            ],
+            "achievements": [],
+            "skills": [
+                "POS Systems",
+                "Inventory",
+                "Customer Service",
+                "Payment Processing"
+            ]
+        },
+        {
+            "company": "ICoST2022 Conference",
+            "company_url": "",
+            "title": "IT Assistant (Supervised)",
+            "employment_type": "Temporary",
+            "start_date": "2022-11",
+            "end_date": "2022-11",
+            "is_current": false,
+            "location": "Duhok, Iraq",
+            "work_mode": "On-site",
+            "description": "Supervised IT support at an international conference.",
+            "responsibilities": [
+                "Installed, configured, and supported workstations, laptops, A/V systems, and network connectivity at a temporary site",
+                "Resolved hardware, software, and network incidents in real time for speakers and attendees",
+                "Maintained asset records and technical documentation"
+            ],
+            "achievements": [],
+            "skills": [
+                "IT Support",
+                "A/V Systems",
+                "Networking",
+                "Troubleshooting",
+                "Documentation"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Duhok Polytechnic University – Technical College of Administration",
+            "institution_url": "https://dpu.edu.krd/",
+            "degree": "Bachelor of Science (B.Sc.)",
+            "field_of_study": "Information Technology Management",
+            "start_date": "",
+            "end_date": "2025",
+            "is_current": false,
+            "location": "Duhok, Kurdistan Region, Iraq",
+            "gpa": "4.0+",
+            "honors": [
+                "Graduated 2nd in Class",
+                "Top-Ranked Project – DPU Software Expo 2025 (NutrAI)"
+            ],
+            "description": "Completed a Bachelor of Science in Information Technology Management, combining enterprise IT infrastructure, database systems, and software engineering with business intelligence, project coordination, and administrative operations.",
+            "relevant_coursework": [
+                "Database Management Systems",
+                "System Analysis & Design",
+                "Computer Networking & Cybersecurity",
+                "Programming (Python, C++, Java)",
+                "Web Development",
+                "Business Intelligence & IT Management"
+            ],
+            "activities_and_projects": [
+                "Led and developed NutrAI, an AI-powered health and nutrition analysis web platform built with the Google Gemini API, earning top-ranked recognition at the DPU Software Expo 2025.",
+                "Provided IT infrastructure and audiovisual technical support at university academic conferences."
+            ],
+            "skills": [
+                "Information Technology Management",
+                "Database Management",
+                "System Analysis",
+                "Networking & Cybersecurity",
+                "Python, C++, & Java",
+                "Business Intelligence",
+                "Technical Writing & Presentation"
+            ]
+        },
+        {
+            "institution": "Harvard University (CS50 via edX)",
+            "institution_url": "https://cs50.harvard.edu/",
+            "degree": "Certificate / Online Coursework",
+            "field_of_study": "CS50's Introduction to Computer Science (CS50x)",
+            "start_date": "2025-07",
+            "end_date": "2026",
+            "is_current": false,
+            "location": "Online",
+            "gpa": "",
+            "honors": [],
+            "description": "Completed Harvard University's foundational computer science program covering algorithms, data structures, memory management, software engineering, and full-stack web fundamentals.",
+            "relevant_coursework": [
+                "C & Memory Management",
+                "Algorithms & Data Structures",
+                "Python & SQL",
+                "HTML, CSS, & JavaScript",
+                "Flask Web Framework"
+            ],
+            "activities_and_projects": [
+                "Completed weekly problem sets and coding labs via GitHub/CS50 Submit."
+            ],
+            "skills": [
+                "C",
+                "Python",
+                "SQL",
+                "Data Structures & Algorithms",
+                "HTML/CSS/JavaScript",
+                "Flask"
+            ]
+        },
+        {
+            "institution": "Harvard University (CS50 via edX)",
+            "institution_url": "https://cs50.harvard.edu/web/",
+            "degree": "Certificate / Online Coursework",
+            "field_of_study": "CS50's Web Programming with Python and JavaScript (CS50W)",
+            "start_date": "2026-07",
+            "end_date": "2026-11",
+            "is_current": true,
+            "location": "Online",
+            "gpa": "",
+            "honors": [],
+            "description": "Completed advanced full-stack web engineering coursework focused on designing, testing, and deploying scalable database-backed web applications.",
+            "relevant_coursework": [
+                "Django & Python Backend Development",
+                "SQL, Models, & Migrations",
+                "JavaScript & Single-Page User Interfaces",
+                "UI/UX Design & Responsive Frontends",
+                "Testing, CI/CD, & Scalability"
+            ],
+            "activities_and_projects": [
+                "Built and submitted full-stack web projects including Search, Wiki, Commerce, and Mail."
+            ],
+            "skills": [
+                "Python",
+                "Django",
+                "JavaScript",
+                "SQL",
+                "REST APIs",
+                "Git & GitHub",
+                "Responsive Web Design"
+            ]
+        }
+    ],
+    "certificates_and_credentials": [
+        {
+            "title": "CS50x: Introduction to Computer Science",
+            "credential_type": "CS50 Certificate of Completion",
+            "recipient_name": "Salah Hasan Ali Alsilevanai",
+            "issuing_organization": "Harvard University (CS50)",
+            "college_or_department": "Harvard John A. Paulson School of Engineering and Applied Sciences",
+            "organization_url": "https://cs50.harvard.edu",
+            "issue_date": "2026",
+            "completion_period": "2025 – 2026",
+            "reference_number": "ae591765-f791-43d4-8f63-8aae0a143ca9",
+            "university_decree": "",
+            "credential_url": "https://cs50.harvard.edu/certificates/ae591765-f791-43d4-8f63-8aae0a143ca9",
+            "signatories": [
+                {
+                    "name": "David J. Malan",
+                    "role": "Gordon McKay Professor of the Practice of Computer Science, Harvard University"
+                }
+            ],
+            "details": {
+                "awarded_from": "Cambridge, Massachusetts",
+                "requirements_completed": "Ten problem sets and one final project",
+                "description": "Completed Harvard University's CS50x: Introduction to Computer Science, including ten problem sets and a final project covering computational thinking, C, Python, SQL, and web development."
+            },
+            "skills": [
+                "Computer Science Fundamentals",
+                "C & Memory Management",
+                "Algorithms & Data Structures",
+                "Python",
+                "SQL",
+                "HTML, CSS, & JavaScript",
+                "Flask Web Development"
+            ]
+        },
+        {
+            "title": "Academic Transcript – Bachelor's Degree in Information Technology Management",
+            "credential_type": "University Degree & Official Academic Transcript",
+            "recipient_name": "Salah Hasan Ali",
+            "issuing_organization": "Duhok Polytechnic University – General Registration Directorate",
+            "college_or_department": "Technical College of Administration - Duhok",
+            "organization_url": "https://www.dpu.edu.krd",
+            "issue_date": "2025-10-28",
+            "completion_period": "2021-2025 (Academic Year 2024-2025)",
+            "reference_number": "252240",
+            "university_decree": "976 on Aug. 20, 2025",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Prof. Dr. Aree Adel Abdulqader",
+                    "role": "University President"
+                },
+                {
+                    "name": "Dr. Swar Abdulsalam Zubeer",
+                    "role": "Director of General Registration"
+                }
+            ],
+            "details": {
+                "degree": "Bachelor of Science (B.Sc.) in Information Technology Management",
+                "grade_classification": "Excellence",
+                "cgpa": 90.3375,
+                "class_rank": "2 out of 49",
+                "total_credits": "240 ECTS credits (8 regular semesters across 4 years; 1 credit = 27 workload hours)",
+                "study_system": "Morning, Semester System (15 Weeks), First Attempt, No Failed or Deferred Years",
+                "semester_averages": {
+                    "year_1_sem_1": 87.6667,
+                    "year_1_sem_2": 85.0,
+                    "year_2_sem_1": 89.5333,
+                    "year_2_sem_2": 91.1,
+                    "year_3_sem_1": 93.4333,
+                    "year_3_sem_2": 92.2,
+                    "year_4_sem_1": 90.4333,
+                    "year_4_sem_2": 93.3333
+                },
+                "notable_high_scoring_courses": [
+                    {
+                        "course": "Programming Fundamentals",
+                        "mark": 98,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "System Analysis and Design",
+                        "mark": 98,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Operating System",
+                        "mark": 98,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Human Resource Management",
+                        "mark": 98,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Web Design",
+                        "mark": 98,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Graduation Project",
+                        "mark": 98,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Visual Programming (C#)",
+                        "mark": 97,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Machine Learning",
+                        "mark": 97,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Production and Operation Management",
+                        "mark": 97,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "English for Academic Purposes 1",
+                        "mark": 97,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Programming Techniques (Java)",
+                        "mark": 96,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Mobile Technology Technologies",
+                        "mark": 96,
+                        "grade": "Excellent"
+                    },
+                    {
+                        "course": "Summer Training",
+                        "mark": 96,
+                        "grade": "Excellent"
+                    }
+                ]
+            },
+            "skills": [
+                "Information Technology Management",
+                "Programming (C#, Java, Python)",
+                "Data Structures & OOP",
+                "Database Management Systems",
+                "System Analysis & Design",
+                "Web Programming & Design",
+                "Computer Networks & Cybersecurity",
+                "Cloud Computing",
+                "Artificial Intelligence & Machine Learning",
+                "Business Intelligence & IT Project Management"
+            ]
+        },
+        {
+            "title": "EF SET English Certificate (C2 Proficient)",
+            "credential_type": "Language Proficiency Certification",
+            "recipient_name": "Salah Hasan Ali Alsilevanai",
+            "issuing_organization": "EF Standard English Test (EF SET)",
+            "college_or_department": "",
+            "organization_url": "https://www.efset.org",
+            "issue_date": "2025-08-06",
+            "completion_period": "2025-08-06",
+            "reference_number": "RFGapA",
+            "university_decree": "",
+            "credential_url": "https://cert.efset.org/RFGapA",
+            "signatories": [],
+            "details": {
+                "overall_score": "76 / 100",
+                "cefr_level": "C2 Proficient",
+                "section_scores": {
+                    "reading": {
+                        "score": "78 / 100",
+                        "cefr_level": "C2 Proficient"
+                    },
+                    "listening": {
+                        "score": "73 / 100",
+                        "cefr_level": "C2 Proficient"
+                    }
+                },
+                "proficiency_summary": "Demonstrates mastery-level comprehension of complex technical, academic, and literary written texts as well as fast-paced native spoken English, lectures, and abstract debates."
+            },
+            "skills": [
+                "English Proficiency (C2 CEFR)",
+                "Technical & Academic Reading",
+                "Advanced Listening Comprehension",
+                "Professional & Cross-Cultural Communication"
+            ]
+        },
+        {
+            "title": "Endpoint Security",
+            "credential_type": "Certificate of Completion",
+            "recipient_name": "Salah Hasan Ali Alsilevanai",
+            "issuing_organization": "Cisco Networking Academy",
+            "college_or_department": "Duhok Polytechnic University",
+            "organization_url": "https://www.netacad.com",
+            "issue_date": "2025-05-28",
+            "completion_period": "2025-05-28",
+            "reference_number": "",
+            "university_decree": "",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Azar Salih",
+                    "role": "Instructor, Duhok Polytechnic University"
+                }
+            ],
+            "details": {
+                "program": "Cisco Networking Academy",
+                "description": "Successfully completed the Endpoint Security course offered by Duhok Polytechnic University through the Cisco Networking Academy program."
+            },
+            "skills": [
+                "Endpoint Security",
+                "Network Defense",
+                "Threat Mitigation",
+                "Cybersecurity Fundamentals",
+                "System Hardening"
+            ]
+        },
+        {
+            "title": "Python Essentials 1",
+            "credential_type": "Certificate of Completion",
+            "recipient_name": "Salah Hasan Ali",
+            "issuing_organization": "Cisco Networking Academy",
+            "college_or_department": "Duhok Polytechnic University",
+            "organization_url": "https://www.netacad.com",
+            "issue_date": "2024-11-09",
+            "completion_period": "2024-11-09",
+            "reference_number": "",
+            "university_decree": "",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Fady Samann",
+                    "role": "Instructor, Duhok Polytechnic University"
+                }
+            ],
+            "details": {
+                "program": "Cisco Networking Academy",
+                "description": "Successfully completed the Python Essentials 1 programming course offered by Duhok Polytechnic University through the Cisco Networking Academy program."
+            },
+            "skills": [
+                "Python Programming",
+                "Algorithmic Thinking",
+                "Data Types & Control Flow",
+                "Functions & Exception Handling"
+            ]
+        },
+        {
+            "title": "AUK's Coding Hackathon 2024",
+            "credential_type": "Certificate of Participation",
+            "recipient_name": "Salah Hasan Ali",
+            "issuing_organization": "The American University of Kurdistan (AUK)",
+            "college_or_department": "College of Arts & Sciences (CSIT)",
+            "organization_url": "https://auk.edu.krd",
+            "issue_date": "2024-10-10",
+            "completion_period": "2024-10-10",
+            "reference_number": "",
+            "university_decree": "",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Dr. Shamal Taha",
+                    "role": "Chair, CSIT, The American University of Kurdistan"
+                },
+                {
+                    "name": "Dr. Khedir Ramazan",
+                    "role": "Dean, College of Arts and Sciences, The American University of Kurdistan"
+                }
+            ],
+            "details": {
+                "event": "AUK's Coding Hackathon 2024",
+                "partners_and_sponsors": [
+                    "The American University of Kurdistan",
+                    "Microsoft",
+                    "Mustika Barzani Building"
+                ],
+                "description": "Participated in the 2024 competitive coding hackathon hosted by the College of Arts & Sciences at The American University of Kurdistan."
+            },
+            "skills": [
+                "Competitive Programming",
+                "Rapid Prototyping",
+                "Problem Solving",
+                "Team Collaboration"
+            ]
+        },
+        {
+            "title": "Global Solutions Sustainability Challenge – Finalist Team (Cohort X)",
+            "credential_type": "Honor / Finalist Achievement Certificate",
+            "recipient_name": "Salah Ali",
+            "issuing_organization": "IREX",
+            "college_or_department": "J. Christopher Stevens Virtual Exchange Initiative (JCSVEI) / Aspen Institute",
+            "organization_url": "https://www.irex.org",
+            "issue_date": "2024-04-24",
+            "completion_period": "Spring 2024 (Cohort X)",
+            "reference_number": "",
+            "university_decree": "",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Sarah Bever",
+                    "role": "Senior Technical Advisor, IREX"
+                }
+            ],
+            "details": {
+                "achievement": "Finalist Team – Cohort X",
+                "sponsoring_bodies": [
+                    "IREX",
+                    "J. Christopher Stevens Virtual Exchange Initiative (JCSVEI)",
+                    "U.S. Department of State's Bureau of Educational and Cultural Affairs",
+                    "The Aspen Institute"
+                ],
+                "description": "Recognized for placing as a finalist team in Cohort X of the Global Solutions Sustainability Challenge."
+            },
+            "skills": [
+                "Sustainable Business Modeling",
+                "Product Prototyping",
+                "Video Pitching",
+                "Binational Teamwork",
+                "Design Thinking"
+            ]
+        },
+        {
+            "title": "Global Solutions Sustainability Challenge – Certificate of Completion",
+            "credential_type": "Certificate of Completion",
+            "recipient_name": "Salah Ali",
+            "issuing_organization": "IREX",
+            "college_or_department": "Duhok Polytechnic University / JCSVEI / Aspen Institute",
+            "organization_url": "https://www.irex.org",
+            "issue_date": "2024-04",
+            "completion_period": "February 2024 – April 2024 (9 Weeks)",
+            "reference_number": "",
+            "university_decree": "",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Sarah Bever",
+                    "role": "Senior Technical Advisor, Education Practice, IREX"
+                }
+            ],
+            "details": {
+                "duration": "9 weeks (February 2024 – April 2024)",
+                "sponsoring_bodies": [
+                    "IREX",
+                    "J. Christopher Stevens Virtual Exchange Initiative (JCSVEI)",
+                    "U.S. Department of State's Bureau of Educational and Cultural Affairs",
+                    "The Aspen Institute"
+                ],
+                "description": "Completed a 9-week standards-aligned virtual exchange program with binational teammates involving local community impact investigation, prototype creation, and final submissions of a business concept and video pitch."
+            },
+            "skills": [
+                "Design Thinking",
+                "Prototype Development",
+                "Business Concept Creation",
+                "Cross-Cultural Collaboration",
+                "UN Sustainable Development Goals (SDGs)"
+            ]
+        },
+        {
+            "title": "Global Solutions Conversations Program – Fall 2023",
+            "credential_type": "Certificate of Completion",
+            "recipient_name": "Salah Ali",
+            "issuing_organization": "IREX",
+            "college_or_department": "Duhok Polytechnic University / JCSVEI / Aspen Institute",
+            "organization_url": "https://www.irex.org",
+            "issue_date": "2023-11",
+            "completion_period": "October 2023 – November 2023",
+            "reference_number": "",
+            "university_decree": "",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Sarah Bever",
+                    "role": "Senior Technical Advisor, Education Practice, IREX"
+                }
+            ],
+            "details": {
+                "duration": "6 virtual dialogue sessions (October 2023 – November 2023)",
+                "sponsoring_bodies": [
+                    "IREX",
+                    "J. Christopher Stevens Virtual Exchange Initiative (JCSVEI)",
+                    "U.S. Department of State's Bureau of Educational and Cultural Affairs",
+                    "The Aspen Institute"
+                ],
+                "description": "Completed six binational virtual exchange dialogue sessions focused on cross-cultural communication, global citizenship, and brainstorming sustainable solutions aligned with the UN Sustainable Development Goals using design thinking."
+            },
+            "skills": [
+                "Cross-Cultural Communication",
+                "Global Citizenship",
+                "Design Thinking",
+                "Sustainable Development Brainstorming"
+            ]
+        },
+        {
+            "title": "Global Solutions Conversations Program – Spring 2023",
+            "credential_type": "Certificate of Completion",
+            "recipient_name": "Salah Ali",
+            "issuing_organization": "IREX",
+            "college_or_department": "Duhok Polytechnic University / Stevens Initiative / Aspen Institute",
+            "organization_url": "https://www.irex.org",
+            "issue_date": "2023-04",
+            "completion_period": "February 2023 – April 2023",
+            "reference_number": "",
+            "university_decree": "",
+            "credential_url": "",
+            "signatories": [
+                {
+                    "name": "Sarah Bever",
+                    "role": "Senior Technical Advisor, Education Practice, IREX"
+                }
+            ],
+            "details": {
+                "duration": "6 virtual dialogue sessions (February 2023 – April 2023)",
+                "sponsoring_bodies": [
+                    "IREX",
+                    "The Stevens Initiative",
+                    "U.S. Department of State / U.S. Government",
+                    "The Aspen Institute",
+                    "Bezos Family Foundation",
+                    "Governments of Morocco and the United Arab Emirates"
+                ],
+                "description": "Completed six binational virtual exchange dialogue sessions developing cross-cultural communication and global citizenship skills while brainstorming sustainable solutions related to the UN Sustainable Development Goals."
+            },
+            "skills": [
+                "Cross-Cultural Communication",
+                "Global Citizenship",
+                "Design Thinking",
+                "International Collaboration"
+            ]
         }
     ]
 }
