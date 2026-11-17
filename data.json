@@ -1,6 +1,7 @@
 {
     "name": "Salah Alsilevanai",
     "title": "Full Stack Developer & IT Engineer",
+    "short_bio": "I design and engineer serverless cloud architectures, modern full-stack web applications, and resilient physical IT systems. From architecting edge media delivery handling 700k+ surges at ~$10/month, to deploying production bilingual Django platforms and managing enterprise IT field hardware, I bridge thoughtful software design with reliable infrastructure.",
     "location": "Duhok, Kurdistan",
     "social": [
         {
