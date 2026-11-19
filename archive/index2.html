@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- add react links -->
+    <!-- 1. React Core -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- 2. ReactDOM (for rendering to the browser) -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- 3. Babel (to translate JSX into standard JavaScript) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+
+    <title>Salah Alsilevanai</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function Header({ data }) {
+            return (
+                <div className="
+                flex items-center justify-between
+                ">
+                    <h1>{data?.name}</h1>
+                    <p>{data?.title}</p>
+                    <ul>
+                        {data?.social?.map((social, index) => (
+                            <li key={index}>
+                                <a href={social.url}>{social.name}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )
+        }
+        function ProjectPage({ project, index }) {
+            return (
+                <div key={index} className="my-8">
+                    <h2 className="text-2xl font-bold">{project.name}</h2>
+
+                    {project.live_demo && <a className="text-blue-500 hover:underline" href={project.live_demo}>Live Project <span className="inline-block ml-1">&#8599;</span></a>}
+                    {project.github_page && <a className="text-blue-500 hover:underline" href={project.github_page}>GitHub Page <span className="inline-block ml-1">&#8599;</span></a>}
+
+                    <p className="text-gray-600 font-medium">{project.subtitle}</p>
+                    <p className="mt-2">{project.short_description || project.overview}</p>
+                    <ul className="mt-4 list-disc pl-5">
+                        {project?.features?.map((featureObj, fIndex) => {
+                            const [title, desc] = Object.entries(featureObj)[0] || [];
+                            return (
+                                <li key={fIndex} className="mb-1">
+                                    <strong>{title}:</strong> {desc}
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            )
+        }
+
+        function ProjectCards({ data }) {
+            return (
+                <div>
+                    {data?.map((project, index) => <ProjectCard key={index} project={project} />)}
+                </div>
+            )
+        }
+        function ProjectCard({ project, index }) {
+            return (
+                <div key={index} className="my-4 p-4 bg-slate-100 rounded-r-lg border-l-4 border-amber-500 hover:shadow-lg hover:shadow-slate-200 hover:-translate-y-1 transition-all duration-300">
+
+                    <h2 className="text-2xl font-bold">{project.name} <span className="font-normal text-gray-400">{project.year}</span></h2>
+
+
+                    <p className="text-gray-600 font-medium my-2">{project.subtitle}</p>
+
+                    <div className="flex gap-4">
+                        {project.live_demo && <a className="text-blue-500 hover:underline" href={project.live_demo.trim()} target="_blank">Live Demo <span className="inline-block ml-1">&#8599;</span></a>}
+                        {project.github_page && <a className="text-blue-500 hover:underline" href={project.github_page.trim()} target="_blank">GitHub Page <span className="inline-block ml-1">&#8599;</span></a>}
+                    </div>
+                </div>
+            )
+        }
+
+        function Hero({ data }) {
+            return (
+                <div className="flex 
+                ">
+
+                </div>
+            )
+        }
+        function App() {
+            const [data, setData] = useState(null);
+            useEffect(() => {
+                fetch('./data.json')
+                    .then(response => {
+                        if (!response.ok) throw new Error('Failed to load data.json');
+                        return response.json();
+                    })
+                    .then(loadedData => {
+                        setData(loadedData);
+                    })
+                    .catch(err => {
+                        console.error(err);
+                    })
+            }, []);
+
+            if (!data) return <p>Loading...</p>;
+
+
+            return (
+                // 20px padding on top and bottom + 4px padding on left and right for small screens
+                // 16px padding on top and bottom + 4px padding on left and right for medium screens
+                // 8px padding on top and bottom + 20px padding on left and right for large screens
+                <div class="max-w-7xl mx-auto px-4 py-8 px-4 md:px-6 md:py-16 lg:px-20 lg:py-32">
+
+                    <Header data={data} />
+                    <ProjectCards data={data.projects} />
+                </div>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        root.render(<App />);
+    </script>
+</body>
+
+</html>
