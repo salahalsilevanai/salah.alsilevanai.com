@@ -575,8 +575,8 @@
                 const navItems = [
                     { label: 'Jump to: Selected Projects', action: () => { document.getElementById('projects-section')?.scrollIntoView({ behavior: 'smooth' }); setIsCmdOpen(false); }, category: 'Navigation' },
                     { label: 'Jump to: Work Experience', action: () => { document.getElementById('experience-section')?.scrollIntoView({ behavior: 'smooth' }); setIsCmdOpen(false); }, category: 'Navigation' },
-                    { label: 'Jump to: Education & Credentials', action: () => { document.getElementById('education-section')?.scrollIntoView({ behavior: 'smooth' }); setIsCmdOpen(false); }, category: 'Navigation' },
                     { label: 'Jump to: Technical Toolkit', action: () => { document.getElementById('toolkit-section')?.scrollIntoView({ behavior: 'smooth' }); setIsCmdOpen(false); }, category: 'Navigation' },
+                    { label: 'Jump to: Education & Credentials', action: () => { document.getElementById('education-section')?.scrollIntoView({ behavior: 'smooth' }); setIsCmdOpen(false); }, category: 'Navigation' },
                     { label: 'Jump to: Contact Section', action: () => { document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' }); setIsCmdOpen(false); }, category: 'Navigation' }
                 ];
 
@@ -674,16 +674,16 @@
                                 Experience
                             </button>
                             <button
-                                onClick={() => document.getElementById('education-section')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="hidden sm:inline-block px-2.5 py-1 rounded-full text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-colors"
-                            >
-                                Education
-                            </button>
-                            <button
                                 onClick={() => document.getElementById('toolkit-section')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="hidden sm:inline-block px-2.5 py-1 rounded-full text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-colors"
                             >
                                 Toolkit
+                            </button>
+                            <button
+                                onClick={() => document.getElementById('education-section')?.scrollIntoView({ behavior: 'smooth' })}
+                                className="hidden sm:inline-block px-2.5 py-1 rounded-full text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-colors"
+                            >
+                                Education
                             </button>
                             <button
                                 onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
@@ -1298,11 +1298,119 @@
                             </div>
                         </section>
 
-                        {/* --- 03 / EDUCATION & CREDENTIALS --- */}
+                        {/* --- 03 / TECHNICAL TOOLKIT --- */}
+                        <section id="toolkit-section" className="space-y-6">
+                            <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-3">
+                                <h2 className="text-xs font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+                                    03 / Technical Toolkit
+                                </h2>
+                                <span className="text-[11px] font-mono text-zinc-400 no-print">Click any tag to filter</span>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
+                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
+                                        Backend & Cloud
+                                    </h3>
+                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                        {['Python', 'Django', 'Cloudflare Workers', 'Cloudflare R2', 'Node.js', 'PostgreSQL', 'REST APIs', 'Nginx', 'PM2', 'Gunicorn', 'Hetzner VPS'].map((t, idx) => {
+                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
+                                            return (
+                                                <button
+                                                    key={idx}
+                                                    onClick={() => handleSkillClick(t)}
+                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
+                                                        isSel
+                                                            ? 'bg-emerald-500 text-white font-medium'
+                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                                                    }`}
+                                                >
+                                                    {t}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+
+                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
+                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
+                                        Frontend & Client
+                                    </h3>
+                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                        {['JavaScript (ES6+)', 'React', 'Tailwind CSS', 'Chrome Extension API (MV3)', 'Socket.IO', 'HTML5 & CSS3', 'Responsive Design'].map((t, idx) => {
+                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
+                                            return (
+                                                <button
+                                                    key={idx}
+                                                    onClick={() => handleSkillClick(t)}
+                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
+                                                        isSel
+                                                            ? 'bg-emerald-500 text-white font-medium'
+                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                                                    }`}
+                                                >
+                                                    {t}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+
+                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
+                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
+                                        Systems & IT Infrastructure
+                                    </h3>
+                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                        {['CCTV Systems (DVR/NVR)', 'Server Diagnostics', 'Network Provisioning', 'Hardware Break/Fix', 'Cabling & Racks', 'Linux & Windows Admin'].map((t, idx) => {
+                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
+                                            return (
+                                                <button
+                                                    key={idx}
+                                                    onClick={() => handleSkillClick(t)}
+                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
+                                                        isSel
+                                                            ? 'bg-emerald-500 text-white font-medium'
+                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                                                    }`}
+                                                >
+                                                    {t}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+
+                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
+                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
+                                        Foundations & Methods
+                                    </h3>
+                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                        {['Data Structures & Algorithms', 'C & Memory Management', 'Git & CI/CD', 'System Analysis', 'Design Thinking', 'EF SET C2 English'].map((t, idx) => {
+                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
+                                            return (
+                                                <button
+                                                    key={idx}
+                                                    onClick={() => handleSkillClick(t)}
+                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
+                                                        isSel
+                                                            ? 'bg-emerald-500 text-white font-medium'
+                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                                                    }`}
+                                                >
+                                                    {t}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* --- 04 / EDUCATION & CREDENTIALS --- */}
                         <section id="education-section" className="space-y-6">
                             <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-3">
                                 <h2 className="text-xs font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                                    03 / Education & Verified Credentials
+                                    04 / Education & Verified Credentials
                                 </h2>
                             </div>
 
@@ -1404,114 +1512,6 @@
                                             </div>
                                         </div>
                                     ))}
-                                </div>
-                            </div>
-                        </section>
-
-                        {/* --- 04 / TECHNICAL TOOLKIT --- */}
-                        <section id="toolkit-section" className="space-y-6">
-                            <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-3">
-                                <h2 className="text-xs font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                                    04 / Technical Toolkit
-                                </h2>
-                                <span className="text-[11px] font-mono text-zinc-400 no-print">Click any tag to filter</span>
-                            </div>
-
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Backend & Cloud
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['Python', 'Django', 'Cloudflare Workers', 'Cloudflare R2', 'Node.js', 'PostgreSQL', 'REST APIs', 'Nginx', 'PM2', 'Gunicorn', 'Hetzner VPS'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Frontend & Client
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['JavaScript (ES6+)', 'React', 'Tailwind CSS', 'Chrome Extension API (MV3)', 'Socket.IO', 'HTML5 & CSS3', 'Responsive Design'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Systems & IT Infrastructure
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['CCTV Systems (DVR/NVR)', 'Server Diagnostics', 'Network Provisioning', 'Hardware Break/Fix', 'Cabling & Racks', 'Linux & Windows Admin'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Foundations & Methods
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['Data Structures & Algorithms', 'C & Memory Management', 'Git & CI/CD', 'System Analysis', 'Design Thinking', 'EF SET C2 English'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
                                 </div>
                             </div>
                         </section>
