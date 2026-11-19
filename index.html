@@ -159,12 +159,8 @@
 <body
     class="bg-[#fafaf9] text-zinc-900 dark:bg-[#09090b] dark:text-zinc-100 transition-colors duration-200 antialiased selection:bg-zinc-900 selection:text-white dark:selection:bg-zinc-100 dark:selection:text-zinc-900 min-h-screen">
 
+    <!-- React Root -->
     <div id="root"></div>
-
-    <script>
-        // Embedded fallback data ensuring zero CORS breakage when opened via file:/// protocol
-        window.FALLBACK_DATA = {"name":"Salah Alsilevanai","title":"Full Stack Developer & IT Engineer","short_bio":"I design and engineer serverless cloud architectures, modern full-stack web applications, and resilient physical IT systems. From architecting edge media delivery handling 700k+ surges at ~$10/month, to deploying production bilingual Django platforms and managing enterprise IT field hardware, I bridge thoughtful software design with reliable infrastructure.","location":"Duhok, Kurdistan","social":[{"name":"GitHub","url":"https://github.com/salahalsilevanai"},{"name":"LinkedIn","url":"https://www.linkedin.com/in/salahalsilevanai/"}],"email":"salah@alsilevanai.com","projects":[{"name":"Atlas KRD Backend","subtitle":"Edge Content Delivery, Subscription Engine & Cloud Architecture","short_description":"Serverless edge media delivery and automated subscription infrastructure built with Cloudflare Workers and R2\u2014cutting hosting costs to ~$10/month while smoothly handling a 700,000-request launch surge across Android, iOS, and web.","overview":"Architected and built the entire backend, media delivery, and subscription infrastructure from the ground up for a cross-platform content service spanning Android, iOS, and the web. Consulted the project owner away from costly AWS storage in favor of a serverless edge architecture\u2014bringing monthly infrastructure expenses down to ~$10/month while smoothly handling a 700,000-request surge at launch.","features":[{"Cross-Platform Edge Delivery":"Engineered custom Cloudflare Workers to stream video and media assets directly from Cloudflare R2 object storage to the Android app, iOS app, and website with low latency and zero egress fees."},{"Automated Subscription & Gating System":"Built a custom access-code redemption system tied to user emails with server-enforced expiration timers (e.g., a 1-month code redeemed on Oct 23 automatically revokes access on Nov 23). Implemented matching validation logic across the web and mobile clients to strictly block unsubscribed users from accessing protected videos and content."},{"Cost & Scale Optimization":"Researched and replaced an initial AWS S3 plan\u2014which carried prohibitive bandwidth costs\u2014with a Cloudflare R2 and Workers stack, keeping ongoing hosting costs around ~$10/month without sacrificing performance during a 700,000-request launch traffic spike."},{"Automated CI/CD Deployment":"Configured a continuous integration and deployment pipeline linking a private GitHub repository directly to Cloudflare, automatically deploying updates to production whenever changes are pushed to the master branch."}],"tech_stack":["Cloudflare Workers","Cloudflare R2","JavaScript","REST APIs","GitHub / Cloudflare CI/CD"],"live_demo":"https://atlaskrd.com/","github_page":null,"year":"2025"},{"name":"ZMS Publishing","subtitle":"Bilingual Digital Publishing Platform, Custom Dashboard & Production Infrastructure","short_description":"Full-stack bilingual (English/Arabic RTL) web platform and custom editorial dashboard built for a Dubai-based publishing house, streamlining manuscript submissions, book catalogs, and event management on a self-hosted Linux VPS.","overview":"Designed, engineered, and deployed a full-stack bilingual web platform for a Dubai-based book publishing house. Built around a minimal editorial aesthetic, the platform streamlines manuscript intake from aspiring authors, showcases book catalogs and literary events, and gives the publisher a tailored content management dashboard\u2014all running on a self-managed Linux VPS architecture.","features":[{"Bilingual UI with Automatic RTL/LTR Switching":"Engineered seamless English and Arabic localization that dynamically adapts layout direction (RTL/LTR), styled with Tailwind CSS and classic editorial serif typography (EB Garamond)."},{"Manuscript Intake & Review Pipeline":"Built a secure upload portal for authors to submit manuscripts, synopses, and word counts, paired with a custom Django admin dashboard for editors to manage submissions and track review stages (Submitted, Reviewing, Accepted, Rejected)."},{"Catalog, Author & Event Management":"Designed relational database schemas for managing books, author profiles, and literary events (book launches, signings, and workshops), complete with regional Amazon UAE (.ae) and international (.com) distribution links."},{"Full VPS Deployment & Security Hardening":"Provisioned and deployed the production stack on a Hetzner VPS using Gunicorn managed via PM2 alongside PostgreSQL. Configured Nginx reverse-proxy routing and static/media serving, issued SSL certificates via Certbot, and routed traffic through Cloudflare DNS for added security and edge protection."}],"tech_stack":["Python","Django","PostgreSQL","Tailwind CSS","Nginx","PM2","Gunicorn","Hetzner VPS","Certbot","Cloudflare"],"live_demo":"https://zmspublishing.com","github_page":null,"year":"2026"},{"name":"LoungeCast","subtitle":"Real-Time Synchronized Watch Party Extension & WebSocket Relay Server","short_description":"Zero-login Chrome extension (Manifest V3) and Node.js Socket.IO relay server for synchronized OSN+ and YouTube watch parties\u2014featuring real-time play/pause/seek/episode sync, an in-page chat overlay, and automatic service worker recovery hosted on a Hetzner VPS via Cloudflare Tunnels.","overview":"Built a zero-login Chrome extension (Manifest V3) and Node.js WebSocket relay server that enables remote users to watch OSN+ and YouTube videos in real-time sync with an integrated in-page chat overlay. Hosted on a Hetzner VPS via Nginx and Cloudflare Tunnels, the extension works out of the box in any Chrome browser with instant room creation and automatic state recovery.","features":[{"Real-Time Playback & Episode Sync":"Engineered a Socket.IO relay server (osntogetherextension.alsilevanai.com) that tracks per-room playback state (isPlaying, currentTime, url) as a single source of truth\u2014synchronizing play, pause, seek, and automatic URL/episode transitions across peers with loop-prevention logic."},{"Manifest V3 Service Worker & State Recovery":"Implemented a persistent WebSocket connection in the MV3 background service worker to route events per tab (tabRooms), paired with a rebuildTabRooms() recovery routine that restores room state automatically if Chrome suspends an idle worker."},{"In-Page Chat Overlay & Playback Hotkeys":"Injected a slide-out live chat panel directly onto osnplus.com and youtube.com players alongside editable display names, live connection indicators, and keyboard shortcuts (p, s, r, j, l)."},{"Zero-Login Instant Access & VPS Infrastructure":"Deployed the Node.js relay server on a Hetzner VPS behind Nginx and Cloudflare Tunnels, allowing users to install the extension in Chrome and immediately create or join watch rooms with a shareable Room ID\u2014no registration required."}],"tech_stack":["JavaScript (ES Modules)","Chrome Extension API (Manifest V3)","Node.js","Socket.IO (WebSockets)","Nginx","Cloudflare Tunnels","Hetzner VPS"],"live_demo":"","github_page":"https://github.com/salahalsilevanai/lounge-cast","year":"2026"}],"work_experience":[{"work_experience":[{"company":"TRT Global Solutions (TRT Solutions Limited)","company_url":"https://www.trt.com/","title":"Field Services Partner (FSP)","employment_type":"Contract / Freelance","start_date":"2026-10-01","end_date":"","is_current":true,"location":"Duhok, Iraq","work_mode":"On-site / Hybrid","description":"Local Field Services Partner providing on-site and remote technical field support, hardware provisioning, and maintenance across Duhok and Erbil for enterprise clients including Nokia Solutions and Networks Oy.","responsibilities":["Conduct on-site surveys, verify rack space, cabling, and port requirements, and inspect/validate spare equipment.","Perform hardware pre-checks, faulty component replacements, spare network switch upgrades, and post-replacement validation.","Execute incident and change request dispatches under P1, P2, and P3 Service Level Agreements (SLAs) during both standard business hours and outside business hours.","Coordinate remotely with global support desks (GSD/GSS) and Field Service Incident Managers on activity planning, briefings, and troubleshooting.","Safely receive, store, and maintain accountability for client and TRT replacement hardware."],"achievements":["Successfully executed multiple multi-stage Nokia infrastructure maintenance and spare switch upgrade dispatches across Duhok and Erbil (Case cr20583750) with 100% job completion sign-offs.","Negotiated and established a customized regional SLA and 3-week shift rotation framework aligned with the Iraqi workweek (Sunday\u2013Thursday)."],"skills":["Field Service Engineering","Network Switch Upgrades","Hardware Troubleshooting & Replacement","Site Surveys & Rack Cabling Verification","SLA Management (P1/P2/P3)","Enterprise IT Support","Remote & On-site Coordination"]}]},{"company":"HAREKAR","company_url":"","title":"CCTV Operator","employment_type":"Full-time (rotation)","start_date":"2026-02","end_date":"","is_current":true,"location":"Qadiya Oil & Gas Field, Kurdistan Region, Iraq","work_mode":"On-site","description":"CCTV operator supporting DNO oil and gas field operations near Qadiya, working a 14-days-on / 7-days-off rotation in an active field environment.","responsibilities":["Operate and monitor CCTV surveillance across active oil and gas field sites","Track system status in real time, escalate incidents promptly, and maintain operational logs in line with field security procedures","Use VHF radio to receive and act on field commands","Coordinate with on-site teams on camera health, network connectivity, and equipment checks across multiple locations"],"achievements":[],"skills":["CCTV Monitoring","VHF Radio","Incident Escalation","Operational Logging","Field Operations","Oil & Gas"]},{"company":"Self-Employed","company_url":"https://salah.alsilevanai.com","title":"Senior IT Engineer (Freelance)","employment_type":"Freelance","start_date":"2018-01","end_date":"","is_current":true,"location":"Duhok, Iraq","work_mode":"Hybrid (on-site and remote)","description":"Freelance IT support, networking, and CCTV installation for businesses and residential clients.","responsibilities":["Diagnose and resolve hardware and software faults on Windows desktops, laptops, and mobile devices (Android/iOS)","Install, configure, and maintain CCTV systems, including camera setup, DVR/NVR configuration, and network integration","Deploy and troubleshoot LAN/Wi-Fi networks, routers, and structured cabling","Perform OS installations, upgrades, data backups, and performance optimisation","Deliver remote troubleshooting using remote desktop tools"],"achievements":[],"skills":["Windows","Networking","LAN/Wi-Fi","Structured Cabling","CCTV (DVR/NVR)","Mobile Device Support","Remote Support","Backups"]},{"company":"Self-Employed","company_url":"https://salah.alsilevanai.com","title":"Full-Stack Developer (Freelance / Part-Time)","employment_type":"Freelance","start_date":"2025-01","end_date":"","is_current":true,"location":"Duhok, Iraq","work_mode":"Remote","description":"Freelance full-stack development, from backend infrastructure and APIs to front-end interfaces, deployment, and hosting.","responsibilities":["Design, build, and deploy web applications end to end","Host websites on VPS servers and set up free SSL for secure HTTPS access","Build APIs with Django and configure the complete user flow from domain and server to API and front-end","Set up CI/CD pipelines and cloud hosting (Cloudflare, Vercel, Supabase)"],"achievements":["Migrated AtlasKRD, a platform handling 750,000+ daily requests, to cloud infrastructure, cutting hosting costs by 99.5% ($1,500/mo to $7/mo) while improving reliability","NutrAI, an AI-based data analysis platform, ranked among top projects at DPU Software Expo 2025","Completed HarvardX CS50x (Jul 2026)"],"skills":["JavaScript","TypeScript","Python","Django","SQL","HTML/CSS","VPS Hosting","SSL/HTTPS","Cloudflare","Supabase","CI/CD"]},{"company":"Warveen","company_url":"","title":"Creative Designer & Stationery Associate","employment_type":"Temporary","start_date":"2025-08","end_date":"2025-10","is_current":false,"location":"Duhok, Iraq","work_mode":"On-site","description":"Handled client design projects and stationery services, from concept to delivery.","responsibilities":["Managed client design projects from brief to completion, including large-format printing and academic thesis formatting","Advised clients and turned their requirements into effective visual solutions","Handled payments and administrative record-keeping"],"achievements":[],"skills":["Adobe Photoshop","Adobe Illustrator","Layout & Typography","Client Communication"]},{"company":"Sultan Alsham","company_url":"","title":"Restaurant Captain","employment_type":"Temporary","start_date":"2024-09","end_date":"2024-11","is_current":false,"location":"Duhok, Iraq","work_mode":"On-site","description":"Led floor service in a high-pressure, procedure-driven restaurant environment.","responsibilities":["Prioritised tasks and resolved operational issues in real time","Coordinated staff and resources during peak hours","Handled customer enquiries and complaints"],"achievements":[],"skills":["Team Coordination","Customer Service","Problem Solving"]},{"company":"MikeSport","company_url":"","title":"Sales Representative","employment_type":"Temporary","start_date":"2024-06","end_date":"2024-09","is_current":false,"location":"Duhok, Iraq","work_mode":"On-site","description":"Retail sales, point-of-sale operation, and basic technical support.","responsibilities":["Advised customers on products and processed transactions","Supported POS systems and end-user hardware","Assisted with inventory systems and basic troubleshooting"],"achievements":[],"skills":["POS Systems","Inventory","Customer Service","Payment Processing"]},{"company":"ICoST2022 Conference","company_url":"","title":"IT Assistant (Supervised)","employment_type":"Temporary","start_date":"2022-11","end_date":"2022-11","is_current":false,"location":"Duhok, Iraq","work_mode":"On-site","description":"Supervised IT support at an international conference.","responsibilities":["Installed, configured, and supported workstations, laptops, A/V systems, and network connectivity at a temporary site","Resolved hardware, software, and network incidents in real time for speakers and attendees","Maintained asset records and technical documentation"],"achievements":[],"skills":["IT Support","A/V Systems","Networking","Troubleshooting","Documentation"]}],"education":[{"institution":"Duhok Polytechnic University \u2013 Technical College of Administration","institution_url":"https://dpu.edu.krd/","degree":"Bachelor of Science (B.Sc.)","field_of_study":"Information Technology Management","start_date":"","end_date":"2025","is_current":false,"location":"Duhok, Kurdistan Region, Iraq","gpa":"4.0+","honors":["Graduated 2nd in Class","Top-Ranked Project \u2013 DPU Software Expo 2025 (NutrAI)"],"description":"Completed a Bachelor of Science in Information Technology Management, combining enterprise IT infrastructure, database systems, and software engineering with business intelligence, project coordination, and administrative operations.","relevant_coursework":["Database Management Systems","System Analysis & Design","Computer Networking & Cybersecurity","Programming (Python, C++, Java)","Web Development","Business Intelligence & IT Management"],"activities_and_projects":["Led and developed NutrAI, an AI-powered health and nutrition analysis web platform built with the Google Gemini API, earning top-ranked recognition at the DPU Software Expo 2025.","Provided IT infrastructure and audiovisual technical support at university academic conferences."],"skills":["Information Technology Management","Database Management","System Analysis","Networking & Cybersecurity","Python, C++, & Java","Business Intelligence","Technical Writing & Presentation"]},{"institution":"Harvard University (CS50 via edX)","institution_url":"https://cs50.harvard.edu/","degree":"Certificate / Online Coursework","field_of_study":"CS50's Introduction to Computer Science (CS50x)","start_date":"2025-07","end_date":"2026","is_current":false,"location":"Online","gpa":"","honors":[],"description":"Completed Harvard University's foundational computer science program covering algorithms, data structures, memory management, software engineering, and full-stack web fundamentals.","relevant_coursework":["C & Memory Management","Algorithms & Data Structures","Python & SQL","HTML, CSS, & JavaScript","Flask Web Framework"],"activities_and_projects":["Completed weekly problem sets and coding labs via GitHub/CS50 Submit."],"skills":["C","Python","SQL","Data Structures & Algorithms","HTML/CSS/JavaScript","Flask"]},{"institution":"Harvard University (CS50 via edX)","institution_url":"https://cs50.harvard.edu/web/","degree":"Certificate / Online Coursework","field_of_study":"CS50's Web Programming with Python and JavaScript (CS50W)","start_date":"2026-07","end_date":"2026-11","is_current":true,"location":"Online","gpa":"","honors":[],"description":"Completed advanced full-stack web engineering coursework focused on designing, testing, and deploying scalable database-backed web applications.","relevant_coursework":["Django & Python Backend Development","SQL, Models, & Migrations","JavaScript & Single-Page User Interfaces","UI/UX Design & Responsive Frontends","Testing, CI/CD, & Scalability"],"activities_and_projects":["Built and submitted full-stack web projects including Search, Wiki, Commerce, and Mail."],"skills":["Python","Django","JavaScript","SQL","REST APIs","Git & GitHub","Responsive Web Design"]}],"certificates_and_credentials":[{"title":"CS50x: Introduction to Computer Science","credential_type":"CS50 Certificate of Completion","recipient_name":"Salah Hasan Ali Alsilevanai","issuing_organization":"Harvard University (CS50)","college_or_department":"Harvard John A. Paulson School of Engineering and Applied Sciences","organization_url":"https://cs50.harvard.edu","issue_date":"2026","completion_period":"2025 \u2013 2026","reference_number":"ae591765-f791-43d4-8f63-8aae0a143ca9","university_decree":"","credential_url":"https://cs50.harvard.edu/certificates/ae591765-f791-43d4-8f63-8aae0a143ca9","signatories":[{"name":"David J. Malan","role":"Gordon McKay Professor of the Practice of Computer Science, Harvard University"}],"details":{"awarded_from":"Cambridge, Massachusetts","requirements_completed":"Ten problem sets and one final project","description":"Completed Harvard University's CS50x: Introduction to Computer Science, including ten problem sets and a final project covering computational thinking, C, Python, SQL, and web development."},"skills":["Computer Science Fundamentals","C & Memory Management","Algorithms & Data Structures","Python","SQL","HTML, CSS, & JavaScript","Flask Web Development"]},{"title":"Academic Transcript \u2013 Bachelor's Degree in Information Technology Management","credential_type":"University Degree & Official Academic Transcript","recipient_name":"Salah Hasan Ali","issuing_organization":"Duhok Polytechnic University \u2013 General Registration Directorate","college_or_department":"Technical College of Administration - Duhok","organization_url":"https://www.dpu.edu.krd","issue_date":"2025-10-28","completion_period":"2021-2025 (Academic Year 2024-2025)","reference_number":"252240","university_decree":"976 on Aug. 20, 2025","credential_url":"","signatories":[{"name":"Prof. Dr. Aree Adel Abdulqader","role":"University President"},{"name":"Dr. Swar Abdulsalam Zubeer","role":"Director of General Registration"}],"details":{"degree":"Bachelor of Science (B.Sc.) in Information Technology Management","grade_classification":"Excellence","cgpa":90.3375,"class_rank":"2 out of 49","total_credits":"240 ECTS credits (8 regular semesters across 4 years; 1 credit = 27 workload hours)","study_system":"Morning, Semester System (15 Weeks), First Attempt, No Failed or Deferred Years","semester_averages":{"year_1_sem_1":87.6667,"year_1_sem_2":85.0,"year_2_sem_1":89.5333,"year_2_sem_2":91.1,"year_3_sem_1":93.4333,"year_3_sem_2":92.2,"year_4_sem_1":90.4333,"year_4_sem_2":93.3333},"notable_high_scoring_courses":[{"course":"Programming Fundamentals","mark":98,"grade":"Excellent"},{"course":"System Analysis and Design","mark":98,"grade":"Excellent"},{"course":"Operating System","mark":98,"grade":"Excellent"},{"course":"Human Resource Management","mark":98,"grade":"Excellent"},{"course":"Web Design","mark":98,"grade":"Excellent"},{"course":"Graduation Project","mark":98,"grade":"Excellent"},{"course":"Visual Programming (C#)","mark":97,"grade":"Excellent"},{"course":"Machine Learning","mark":97,"grade":"Excellent"},{"course":"Production and Operation Management","mark":97,"grade":"Excellent"},{"course":"English for Academic Purposes 1","mark":97,"grade":"Excellent"},{"course":"Programming Techniques (Java)","mark":96,"grade":"Excellent"},{"course":"Mobile Technology Technologies","mark":96,"grade":"Excellent"},{"course":"Summer Training","mark":96,"grade":"Excellent"}]},"skills":["Information Technology Management","Programming (C#, Java, Python)","Data Structures & OOP","Database Management Systems","System Analysis & Design","Web Programming & Design","Computer Networks & Cybersecurity","Cloud Computing","Artificial Intelligence & Machine Learning","Business Intelligence & IT Project Management"]},{"title":"EF SET English Certificate (C2 Proficient)","credential_type":"Language Proficiency Certification","recipient_name":"Salah Hasan Ali Alsilevanai","issuing_organization":"EF Standard English Test (EF SET)","college_or_department":"","organization_url":"https://www.efset.org","issue_date":"2025-08-06","completion_period":"2025-08-06","reference_number":"RFGapA","university_decree":"","credential_url":"https://cert.efset.org/RFGapA","signatories":[],"details":{"overall_score":"76 / 100","cefr_level":"C2 Proficient","section_scores":{"reading":{"score":"78 / 100","cefr_level":"C2 Proficient"},"listening":{"score":"73 / 100","cefr_level":"C2 Proficient"}},"proficiency_summary":"Demonstrates mastery-level comprehension of complex technical, academic, and literary written texts as well as fast-paced native spoken English, lectures, and abstract debates."},"skills":["English Proficiency (C2 CEFR)","Technical & Academic Reading","Advanced Listening Comprehension","Professional & Cross-Cultural Communication"]},{"title":"Endpoint Security","credential_type":"Certificate of Completion","recipient_name":"Salah Hasan Ali Alsilevanai","issuing_organization":"Cisco Networking Academy","college_or_department":"Duhok Polytechnic University","organization_url":"https://www.netacad.com","issue_date":"2025-05-28","completion_period":"2025-05-28","reference_number":"","university_decree":"","credential_url":"","signatories":[{"name":"Azar Salih","role":"Instructor, Duhok Polytechnic University"}],"details":{"program":"Cisco Networking Academy","description":"Successfully completed the Endpoint Security course offered by Duhok Polytechnic University through the Cisco Networking Academy program."},"skills":["Endpoint Security","Network Defense","Threat Mitigation","Cybersecurity Fundamentals","System Hardening"]},{"title":"Python Essentials 1","credential_type":"Certificate of Completion","recipient_name":"Salah Hasan Ali","issuing_organization":"Cisco Networking Academy","college_or_department":"Duhok Polytechnic University","organization_url":"https://www.netacad.com","issue_date":"2024-11-09","completion_period":"2024-11-09","reference_number":"","university_decree":"","credential_url":"","signatories":[{"name":"Fady Samann","role":"Instructor, Duhok Polytechnic University"}],"details":{"program":"Cisco Networking Academy","description":"Successfully completed the Python Essentials 1 programming course offered by Duhok Polytechnic University through the Cisco Networking Academy program."},"skills":["Python Programming","Algorithmic Thinking","Data Types & Control Flow","Functions & Exception Handling"]},{"title":"AUK's Coding Hackathon 2024","credential_type":"Certificate of Participation","recipient_name":"Salah Hasan Ali","issuing_organization":"The American University of Kurdistan (AUK)","college_or_department":"College of Arts & Sciences (CSIT)","organization_url":"https://auk.edu.krd","issue_date":"2024-10-10","completion_period":"2024-10-10","reference_number":"","university_decree":"","credential_url":"","signatories":[{"name":"Dr. Shamal Taha","role":"Chair, CSIT, The American University of Kurdistan"},{"name":"Dr. Khedir Ramazan","role":"Dean, College of Arts and Sciences, The American University of Kurdistan"}],"details":{"event":"AUK's Coding Hackathon 2024","partners_and_sponsors":["The American University of Kurdistan","Microsoft","Mustika Barzani Building"],"description":"Participated in the 2024 competitive coding hackathon hosted by the College of Arts & Sciences at The American University of Kurdistan."},"skills":["Competitive Programming","Rapid Prototyping","Problem Solving","Team Collaboration"]},{"title":"Global Solutions Sustainability Challenge \u2013 Finalist Team (Cohort X)","credential_type":"Honor / Finalist Achievement Certificate","recipient_name":"Salah Ali","issuing_organization":"IREX","college_or_department":"J. Christopher Stevens Virtual Exchange Initiative (JCSVEI) / Aspen Institute","organization_url":"https://www.irex.org","issue_date":"2024-04-24","completion_period":"Spring 2024 (Cohort X)","reference_number":"","university_decree":"","credential_url":"","signatories":[{"name":"Sarah Bever","role":"Senior Technical Advisor, IREX"}],"details":{"achievement":"Finalist Team \u2013 Cohort X","sponsoring_bodies":["IREX","J. Christopher Stevens Virtual Exchange Initiative (JCSVEI)","U.S. Department of State's Bureau of Educational and Cultural Affairs","The Aspen Institute"],"description":"Recognized for placing as a finalist team in Cohort X of the Global Solutions Sustainability Challenge."},"skills":["Sustainable Business Modeling","Product Prototyping","Video Pitching","Binational Teamwork","Design Thinking"]},{"title":"Global Solutions Sustainability Challenge \u2013 Certificate of Completion","credential_type":"Certificate of Completion","recipient_name":"Salah Ali","issuing_organization":"IREX","college_or_department":"Duhok Polytechnic University / JCSVEI / Aspen Institute","organization_url":"https://www.irex.org","issue_date":"2024-04","completion_period":"February 2024 \u2013 April 2024 (9 Weeks)","reference_number":"","university_decree":"","credential_url":"","signatories":[{"name":"Sarah Bever","role":"Senior Technical Advisor, Education Practice, IREX"}],"details":{"duration":"9 weeks (February 2024 \u2013 April 2024)","sponsoring_bodies":["IREX","J. Christopher Stevens Virtual Exchange Initiative (JCSVEI)","U.S. Department of State's Bureau of Educational and Cultural Affairs","The Aspen Institute"],"description":"Completed a 9-week standards-aligned virtual exchange program with binational teammates involving local community impact investigation, prototype creation, and final submissions of a business concept and video pitch."},"skills":["Design Thinking","Prototype Development","Business Concept Creation","Cross-Cultural Collaboration","UN Sustainable Development Goals (SDGs)"]},{"title":"Global Solutions Conversations Program \u2013 Fall 2023","credential_type":"Certificate of Completion","recipient_name":"Salah Ali","issuing_organization":"IREX","college_or_department":"Duhok Polytechnic University / JCSVEI / Aspen Institute","organization_url":"https://www.irex.org","issue_date":"2023-11","completion_period":"October 2023 \u2013 November 2023","reference_number":"","university_decree":"","credential_url":"","signatories":[{"name":"Sarah Bever","role":"Senior Technical Advisor, Education Practice, IREX"}],"details":{"duration":"6 virtual dialogue sessions (October 2023 \u2013 November 2023)","sponsoring_bodies":["IREX","J. Christopher Stevens Virtual Exchange Initiative (JCSVEI)","U.S. Department of State's Bureau of Educational and Cultural Affairs","The Aspen Institute"],"description":"Completed six binational virtual exchange dialogue sessions focused on cross-cultural communication, global citizenship, and brainstorming sustainable solutions aligned with the UN Sustainable Development Goals using design thinking."},"skills":["Cross-Cultural Communication","Global Citizenship","Design Thinking","Sustainable Development Brainstorming"]},{"title":"Global Solutions Conversations Program \u2013 Spring 2023","credential_type":"Certificate of Completion","recipient_name":"Salah Ali","issuing_organization":"IREX","college_or_department":"Duhok Polytechnic University / Stevens Initiative / Aspen Institute","organization_url":"https://www.irex.org","issue_date":"2023-04","completion_period":"February 2023 \u2013 April 2023","reference_number":"","university_decree":"","credential_url":"","signatories":[{"name":"Sarah Bever","role":"Senior Technical Advisor, Education Practice, IREX"}],"details":{"duration":"6 virtual dialogue sessions (February 2023 \u2013 April 2023)","sponsoring_bodies":["IREX","The Stevens Initiative","U.S. Department of State / U.S. Government","The Aspen Institute","Bezos Family Foundation","Governments of Morocco and the United Arab Emirates"],"description":"Completed six binational virtual exchange dialogue sessions developing cross-cultural communication and global citizenship skills while brainstorming sustainable solutions related to the UN Sustainable Development Goals."},"skills":["Cross-Cultural Communication","Global Citizenship","Design Thinking","International Collaboration"]}]};
-    </script>
 
     <script type="text/babel">
         const { useState, useEffect, useMemo, useRef } = React;
@@ -316,46 +312,11 @@
             return str;
         }
 
-        // Minimalist ASCII Architecture Topologies
-        const ARCHITECTURES = {
-            "Atlas KRD Backend": `+------------------+     HTTPS      +-----------------------------+
-| Mobile & Web App | -------------> | Cloudflare Workers (Edge)   |
-|     Clients      | <------------- | (Email & Token Expiry Auth) |
-+------------------+  Zero-Egress   +--------------+--------------+
-                       Direct Stream               |
-                                    +--------------v--------------+
-                                    |    Cloudflare R2 Bucket     |
-                                    | (Optimized HLS / Video Ops) |
-                                    +-----------------------------+`,
-
-            "ZMS Publishing": `+------------------+   HTTPS (TLS)  +-----------------------------+
-| Authors, Readers | -------------> |     Nginx Reverse Proxy     |
-|   & Editorial    |                |      (Ubuntu Linux VPS)     |
-+------------------+                +--------------+--------------+
-                                                   | Proxy Pass
-                                    +--------------v--------------+
-                                    |     PM2 + Gunicorn Pool     |
-                                    |   Django 5 Core (RTL / LTR) |
-                                    +--------------+--------------+
-                                                   |
-                                    +--------------v--------------+
-                                    |     PostgreSQL Database     |
-                                    +-----------------------------+`,
-
-            "LoungeCast": `+--------------------+      WSS      +-----------------------------+
-| Chrome Tab (Self)  | <-----------> |    Socket.IO Relay Server   |
-| MV3 Overlay / Chat |               | (Node.js + Nginx Container) |
-+--------------------+               +--------------+--------------+
-                                                    |
-+--------------------+      WSS                     | Cloudflare
-| Chrome Tab (Peer)  | <----------------------------+ Tunnel (Secure)
-| Real-time Sync     |
-+--------------------+`
-        };
-
         // --- MAIN APP COMPONENT ---
         function App() {
-            const [data, setData] = useState(window.FALLBACK_DATA || null);
+            const [data, setData] = useState(null);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
             const [darkMode, setDarkMode] = useState(() => {
                 if (typeof window !== 'undefined') {
                     const saved = localStorage.getItem('theme');
@@ -377,18 +338,43 @@
 
             const cmdInputRef = useRef(null);
 
-            // Live fetch from data.json when served over HTTP
+            // Fetch all data dynamically from data.json
             useEffect(() => {
                 fetch('./data.json')
                     .then(res => {
-                        if (res.ok) return res.json();
-                        throw new Error('Using fallback');
+                        if (!res.ok) throw new Error(`HTTP ${res.status}: Failed to load data.json`);
+                        return res.json();
                     })
                     .then(json => {
-                        if (json && json.name) setData(json);
+                        setData(json);
+                        setLoading(false);
                     })
-                    .catch(() => {});
+                    .catch(err => {
+                        console.error('Failed to load data.json:', err);
+                        setError(err.message || 'Error loading data.json');
+                        setLoading(false);
+                    });
             }, []);
+
+            // Dynamically sync document title and meta tags with data.json
+            useEffect(() => {
+                if (!data) return;
+                if (data.name && data.title) {
+                    document.title = `${data.name} — ${data.title}`;
+                }
+                const descMeta = document.querySelector('meta[name="description"]');
+                if (descMeta && data.short_bio) {
+                    descMeta.setAttribute('content', data.short_bio);
+                }
+                const ogTitle = document.querySelector('meta[property="og:title"]');
+                if (ogTitle && data.name) ogTitle.setAttribute('content', `${data.name} — ${data.title}`);
+                const ogDesc = document.querySelector('meta[property="og:description"]');
+                if (ogDesc && data.short_bio) ogDesc.setAttribute('content', data.short_bio);
+                const twTitle = document.querySelector('meta[name="twitter:title"]');
+                if (twTitle && data.name) twTitle.setAttribute('content', `${data.name} — ${data.title}`);
+                const twDesc = document.querySelector('meta[name="twitter:description"]');
+                if (twDesc && data.short_bio) twDesc.setAttribute('content', data.short_bio);
+            }, [data]);
 
             // Synchronize dark mode, local storage, and dynamic SVG favicon
             useEffect(() => {
@@ -409,13 +395,13 @@
                 }
             }, [darkMode]);
 
-            // Live Duhok (UTC+3) Time Clock
+            // Live Local Time Clock based on data.timezone
             useEffect(() => {
                 const updateClock = () => {
                     try {
                         const now = new Date();
                         const timeString = new Intl.DateTimeFormat('en-US', {
-                            timeZone: 'Asia/Baghdad',
+                            timeZone: data?.timezone || 'Asia/Baghdad',
                             hour: 'numeric',
                             minute: '2-digit',
                             second: '2-digit',
@@ -429,7 +415,7 @@
                 updateClock();
                 const interval = setInterval(updateClock, 1000);
                 return () => clearInterval(interval);
-            }, []);
+            }, [data]);
 
             // Scroll listener for floating navigation island
             useEffect(() => {
@@ -502,19 +488,23 @@
                 }
             };
 
-            // Download Contact vCard
+            // Download Contact vCard dynamically from data
             const downloadVCard = () => {
                 if (!data) return;
+                const nameParts = (data.name || '').trim().split(' ');
+                const lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : '';
+                const firstName = nameParts.length > 1 ? nameParts.slice(0, -1).join(' ') : (data.name || '');
+                const website = data.website || window.location.origin;
                 const vcardContent = [
                     'BEGIN:VCARD',
                     'VERSION:3.0',
-                    `FN:${data.name}`,
-                    `N:Alsilevanai;Salah;;;`,
-                    `TITLE:${data.title}`,
-                    `EMAIL;TYPE=INTERNET,PREF:${data.email}`,
-                    `URL:https://salah.alsilevanai.com`,
-                    `ADR;TYPE=WORK:;;${data.location};;;;`,
-                    'NOTE:Full Stack Developer & IT Engineer specializing in serverless edge cloud and IT systems.',
+                    `FN:${data.name || ''}`,
+                    `N:${lastName};${firstName};;;`,
+                    `TITLE:${data.title || ''}`,
+                    `EMAIL;TYPE=INTERNET,PREF:${data.email || ''}`,
+                    `URL:${website}`,
+                    `ADR;TYPE=WORK:;;${data.location || ''};;;;`,
+                    `NOTE:${data.short_bio || data.title || ''}`,
                     'END:VCARD'
                 ].join('\n');
 
@@ -522,7 +512,7 @@
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'Salah-Alsilevanai.vcf';
+                a.download = `${(data.name || 'contact').replace(/\s+/g, '-')}.vcf`;
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
@@ -645,10 +635,28 @@
                 }
             };
 
-            if (!data) {
+            if (loading) {
                 return (
-                    <div className="min-h-screen flex items-center justify-center font-mono text-xs text-zinc-400">
-                        Loading portfolio...
+                    <div className="min-h-screen flex flex-col items-center justify-center font-mono text-xs text-zinc-500 gap-3">
+                        <div className="w-5 h-5 border-2 border-zinc-300 dark:border-zinc-700 border-t-zinc-900 dark:border-t-zinc-100 rounded-full animate-spin" />
+                        <span>Loading from data.json...</span>
+                    </div>
+                );
+            }
+
+            if (error || !data) {
+                return (
+                    <div className="min-h-screen flex flex-col items-center justify-center font-mono text-xs text-zinc-500 p-6 text-center space-y-3">
+                        <div className="text-rose-500 font-medium">Failed to load data.json</div>
+                        <p className="max-w-md text-zinc-400">
+                            {error || "Unable to read portfolio data from data.json. Ensure the site is served through a web server (e.g., http://localhost:3000)."}
+                        </p>
+                        <button
+                            onClick={() => window.location.reload()}
+                            className="px-3 py-1.5 rounded border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                        >
+                            Retry
+                        </button>
                     </div>
                 );
             }
@@ -806,7 +814,7 @@
                                 <div className="relative group shrink-0">
                                     <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
                                         <img
-                                            src="static/pictures/selfie.jpeg"
+                                            src={data.avatar || "static/pictures/selfie.jpeg"}
                                             alt={data.name}
                                             className="w-full h-full object-cover grayscale contrast-105 group-hover:grayscale-0 transition-all duration-300"
                                             onError={(e) => {
@@ -835,8 +843,8 @@
                                         {duhokTime && (
                                             <>
                                                 <span>·</span>
-                                                <span className="text-zinc-500 dark:text-zinc-400" title="Local Time in Duhok, Kurdistan">
-                                                    {duhokTime} (UTC+3)
+                                                <span className="text-zinc-500 dark:text-zinc-400" title={`Local Time in ${data.location}`}>
+                                                    {duhokTime} ({data.timezone_label || 'UTC+3'})
                                                 </span>
                                             </>
                                         )}
@@ -889,7 +897,7 @@
 
                             {/* Print-only plain email display */}
                             <span className="hidden print-only font-mono text-xs">
-                                Email: {data.email} | https://salah.alsilevanai.com
+                                Email: {data.email} | {data.website || window.location.origin}
                             </span>
 
                             {data.social?.map((s, idx) => (
@@ -919,32 +927,27 @@
                         {/* --- STATEMENT / BIO & IMPACT METRICS --- */}
                         <section className="space-y-4">
                             <p className="text-sm sm:text-base leading-relaxed text-zinc-600 dark:text-zinc-300 font-normal">
-                                {data.short_bio || (
-                                    <>
-                                        I design and engineer serverless cloud architectures, modern full-stack web applications, and resilient physical IT systems. From architecting edge media delivery handling <span className="text-zinc-900 dark:text-white font-medium">700k+ surges at ~$10/month</span>, to deploying production bilingual Django platforms and managing enterprise IT field hardware, I bridge thoughtful software design with reliable infrastructure.
-                                    </>
-                                )}
+                                {data.short_bio}
                             </p>
 
-                            {/* Minimal metrics strip */}
-                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                                <div className="p-3 rounded-lg border border-zinc-200/70 dark:border-zinc-800/70 bg-white/50 dark:bg-zinc-900/30">
-                                    <div className="font-mono text-sm sm:text-base font-semibold text-zinc-900 dark:text-zinc-100">700K+</div>
-                                    <div className="text-[11px] text-zinc-500 font-mono mt-0.5">Launch Requests</div>
+                            {/* Minimal metrics strip pulled dynamically from data.metrics */}
+                            {data.metrics && data.metrics.length > 0 && (
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                                    {data.metrics.map((m, mIdx) => (
+                                        <div
+                                            key={mIdx}
+                                            className="p-3 rounded-lg border border-zinc-200/70 dark:border-zinc-800/70 bg-white/50 dark:bg-zinc-900/30"
+                                        >
+                                            <div className="font-mono text-sm sm:text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                                                {m.value}
+                                            </div>
+                                            <div className="text-[11px] text-zinc-500 font-mono mt-0.5">
+                                                {m.label}
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
-                                <div className="p-3 rounded-lg border border-zinc-200/70 dark:border-zinc-800/70 bg-white/50 dark:bg-zinc-900/30">
-                                    <div className="font-mono text-sm sm:text-base font-semibold text-zinc-900 dark:text-zinc-100">~$10/mo</div>
-                                    <div className="text-[11px] text-zinc-500 font-mono mt-0.5">Edge Cloud Cost</div>
-                                </div>
-                                <div className="p-3 rounded-lg border border-zinc-200/70 dark:border-zinc-800/70 bg-white/50 dark:bg-zinc-900/30">
-                                    <div className="font-mono text-sm sm:text-base font-semibold text-zinc-900 dark:text-zinc-100">4.0+ GPA</div>
-                                    <div className="text-[11px] text-zinc-500 font-mono mt-0.5">2nd in Class (B.Sc.)</div>
-                                </div>
-                                <div className="p-3 rounded-lg border border-zinc-200/70 dark:border-zinc-800/70 bg-white/50 dark:bg-zinc-900/30">
-                                    <div className="font-mono text-sm sm:text-base font-semibold text-zinc-900 dark:text-zinc-100">C2 Level</div>
-                                    <div className="text-[11px] text-zinc-500 font-mono mt-0.5">EF SET Proficient</div>
-                                </div>
-                            </div>
+                            )}
                         </section>
 
                         {/* --- ACTIVE SKILL FILTER BANNER --- */}
@@ -1092,10 +1095,10 @@
 
                                                     <div className={`mt-3.5 space-y-3 ${isOpen ? 'block' : 'hidden print-expand'}`}>
                                                         {/* Minimalist Monospace Topology Diagram */}
-                                                        {ARCHITECTURES[proj.name] && (
+                                                        {proj.architecture_diagram && (
                                                             <div className="p-3 bg-zinc-950 text-zinc-300 dark:bg-zinc-950 dark:text-zinc-300 rounded-lg font-mono text-[10px] sm:text-[11px] leading-tight overflow-x-auto border border-zinc-800">
                                                                 <div className="text-[10px] text-zinc-500 uppercase tracking-widest mb-1 font-mono">System Flow Topology:</div>
-                                                                <pre className="overflow-x-auto">{ARCHITECTURES[proj.name]}</pre>
+                                                                <pre className="overflow-x-auto">{proj.architecture_diagram}</pre>
                                                             </div>
                                                         )}
 
@@ -1308,101 +1311,34 @@
                             </div>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Backend & Cloud
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['Python', 'Django', 'Cloudflare Workers', 'Cloudflare R2', 'Node.js', 'PostgreSQL', 'REST APIs', 'Nginx', 'PM2', 'Gunicorn', 'Hetzner VPS'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
+                                {Object.entries(data.technical_toolkit || {}).map(([category, skills], catIdx) => (
+                                    <div
+                                        key={catIdx}
+                                        className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2"
+                                    >
+                                        <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
+                                            {category}
+                                        </h3>
+                                        <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                            {(skills || []).map((t, idx) => {
+                                                const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
+                                                return (
+                                                    <button
+                                                        key={idx}
+                                                        onClick={() => handleSkillClick(t)}
+                                                        className={`px-2 py-0.5 rounded transition-colors text-left ${
+                                                            isSel
+                                                                ? 'bg-emerald-500 text-white font-medium'
+                                                                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                                                        }`}
+                                                    >
+                                                        {t}
+                                                    </button>
+                                                );
+                                            })}
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Frontend & Client
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['JavaScript (ES6+)', 'React', 'Tailwind CSS', 'Chrome Extension API (MV3)', 'Socket.IO', 'HTML5 & CSS3', 'Responsive Design'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Systems & IT Infrastructure
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['CCTV Systems (DVR/NVR)', 'Server Diagnostics', 'Network Provisioning', 'Hardware Break/Fix', 'Cabling & Racks', 'Linux & Windows Admin'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-
-                                <div className="p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800/70 bg-white/40 dark:bg-zinc-900/30 space-y-2">
-                                    <h3 className="font-mono text-[11px] text-zinc-400 uppercase tracking-wider">
-                                        Foundations & Methods
-                                    </h3>
-                                    <div className="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                                        {['Data Structures & Algorithms', 'C & Memory Management', 'Git & CI/CD', 'System Analysis', 'Design Thinking', 'EF SET C2 English'].map((t, idx) => {
-                                            const isSel = selectedSkill && selectedSkill.toLowerCase() === t.toLowerCase();
-                                            return (
-                                                <button
-                                                    key={idx}
-                                                    onClick={() => handleSkillClick(t)}
-                                                    className={`px-2 py-0.5 rounded transition-colors text-left ${
-                                                        isSel
-                                                            ? 'bg-emerald-500 text-white font-medium'
-                                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                                                    }`}
-                                                >
-                                                    {t}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </section>
 
@@ -1520,10 +1456,10 @@
                         <section id="contact-section" className="space-y-8 pt-4">
                             <div className="p-6 sm:p-8 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/50 space-y-4">
                                 <h2 className="text-base font-medium text-zinc-950 dark:text-white">
-                                    Let's connect
+                                    {data.contact?.heading || "Let's connect"}
                                 </h2>
                                 <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                                    Whether you have a web platform to architect, an edge migration to execute, or require on-site enterprise field engineering in Kurdistan, I'm always open to discussing new opportunities.
+                                    {data.contact?.message || "I'm always open to discussing new opportunities."}
                                 </p>
 
                                 <div className="flex flex-wrap items-center gap-3 pt-2 no-print">
@@ -1556,10 +1492,10 @@
                             {/* Minimalist Footer */}
                             <footer className="pt-6 border-t border-zinc-200/60 dark:border-zinc-800/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-zinc-400 dark:text-zinc-500">
                                 <div>
-                                    © 2026 {data.name} · Built with React & Tailwind CSS
+                                    © {new Date().getFullYear()} {data.name} · Built with React & Tailwind CSS
                                 </div>
                                 <div className="flex items-center gap-4 no-print">
-                                    <span>Duhok, Kurdistan (UTC+3)</span>
+                                    <span>{data.location} ({data.timezone_label || 'UTC+3'})</span>
                                     <button
                                         onClick={() => setIsCmdOpen(true)}
                                         className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-1.5"
