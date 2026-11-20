@@ -254,6 +254,15 @@
             );
         }
 
+        function IconEye({ className = "w-3.5 h-3.5" }) {
+            return (
+                <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+            );
+        }
+
         function IconBadge({ className = "w-4 h-4" }) {
             return (
                 <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
@@ -335,6 +344,8 @@
             const [cmdQuery, setCmdQuery] = useState('');
             const [cmdIndex, setCmdIndex] = useState(0);
             const [duhokTime, setDuhokTime] = useState('');
+            const [viewCount, setViewCount] = useState(null);
+            const [todayCount, setTodayCount] = useState(null);
 
             const cmdInputRef = useRef(null);
 
@@ -353,6 +364,37 @@
                         console.error('Failed to load data.json:', err);
                         setError(err.message || 'Error loading data.json');
                         setLoading(false);
+                    });
+            }, []);
+
+            // Public zero-infrastructure page view counter via hitscounter.dev
+            useEffect(() => {
+                const targetUrl = 'https://salah.alsilevanai.com';
+                const encodedUrl = encodeURIComponent(targetUrl);
+                const isRecorded = sessionStorage.getItem('portfolio_hit_recorded');
+
+                // If hit was already counted in this session, fetch latest totals without re-incrementing
+                const endpoint = isRecorded
+                    ? `https://hitscounter.dev/api/history?url=${encodedUrl}`
+                    : `https://hitscounter.dev/api/hit?url=${encodedUrl}&output=json`;
+
+                fetch(endpoint)
+                    .then(res => {
+                        if (!res.ok) throw new Error(`HTTP ${res.status}: Failed to fetch view count`);
+                        return res.json();
+                    })
+                    .then(json => {
+                        if (json && typeof json.total_hits === 'number') {
+                            setViewCount(json.total_hits);
+                            if (typeof json.today_hits === 'number') {
+                                setTodayCount(json.today_hits);
+                            }
+                            sessionStorage.setItem('portfolio_hit_recorded', 'true');
+                        }
+                    })
+                    .catch(err => {
+                        // Silently handle ad-blocker / offline scenarios without UI impact
+                        console.debug('Page view counter unavailable:', err);
                     });
             }, []);
 
@@ -834,7 +876,7 @@
                                         {data.title}
                                     </p>
 
-                                    {/* Location & Live Duhok Clock */}
+                                    {/* Location, Live Duhok Clock & Views */}
                                     <div className="flex flex-wrap items-center gap-2 mt-1 text-[11px] font-mono text-zinc-400 dark:text-zinc-500">
                                         <div className="inline-flex items-center gap-1">
                                             <IconMapPin className="w-3 h-3 text-zinc-400 dark:text-zinc-500" />
@@ -846,6 +888,18 @@
                                                 <span className="text-zinc-500 dark:text-zinc-400" title={`Local Time in ${data.location}`}>
                                                     {duhokTime} ({data.timezone_label || 'UTC+3'})
                                                 </span>
+                                            </>
+                                        )}
+                                        {viewCount !== null && (
+                                            <>
+                                                <span className="no-print">·</span>
+                                                <div
+                                                    className="inline-flex items-center gap-1 text-zinc-500 dark:text-zinc-400 no-print"
+                                                    title={`${viewCount.toLocaleString()} total views${todayCount !== null ? ` (${todayCount.toLocaleString()} today)` : ''}`}
+                                                >
+                                                    <IconEye className="w-3 h-3 text-zinc-400 dark:text-zinc-500" />
+                                                    <span>{viewCount.toLocaleString()} views</span>
+                                                </div>
                                             </>
                                         )}
                                     </div>
@@ -1495,7 +1549,21 @@
                                     © {new Date().getFullYear()} {data.name} · Built with React & Tailwind CSS
                                 </div>
                                 <div className="flex items-center gap-4 no-print">
-                                    <span>{data.location} ({data.timezone_label || 'UTC+3'})</span>
+                                    <div className="flex items-center gap-1.5">
+                                        <span>{data.location} ({data.timezone_label || 'UTC+3'})</span>
+                                        {viewCount !== null && (
+                                            <>
+                                                <span>·</span>
+                                                <span
+                                                    className="inline-flex items-center gap-1 text-zinc-500 dark:text-zinc-400"
+                                                    title={`${viewCount.toLocaleString()} total views${todayCount !== null ? ` (${todayCount.toLocaleString()} today)` : ''}`}
+                                                >
+                                                    <IconEye className="w-3 h-3 text-zinc-400 dark:text-zinc-500" />
+                                                    <span>{viewCount.toLocaleString()} views</span>
+                                                </span>
+                                            </>
+                                        )}
+                                    </div>
                                     <button
                                         onClick={() => setIsCmdOpen(true)}
                                         className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-1.5"
